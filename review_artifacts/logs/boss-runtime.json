@@ -1,0 +1,42 @@
+{
+	"assertion_count": 4,
+	"assertions": [
+		{
+			"assertion": "Boss stage UI entry 5",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Boss runtime victory 5",
+			"detail": "42.1666666666656",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Boss stage UI entry 10",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Boss runtime victory 10",
+			"detail": "189.933333333377",
+			"result": "PASS"
+		}
+	],
+	"automatic_physics": true,
+	"case": "boss-runtime",
+	"failures": 0,
+	"real_main_scene": true,
+	"real_save_file": true,
+	"stages": [
+		{
+			"elapsed": 42.1666666666656,
+			"result": "victory",
+			"stage": 5
+		},
+		{
+			"elapsed": 189.933333333377,
+			"result": "victory",
+			"stage": 10
+		}
+	]
+}

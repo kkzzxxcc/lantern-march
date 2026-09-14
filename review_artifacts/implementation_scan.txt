@@ -1,0 +1,35 @@
+core/combat/projectile_pool.gd:23: return true
+core/combat/projectile_pool.gd:28: if not slot.active: return true
+core/resource/battle_resources.gd:30: return true
+core/resource/battle_resources.gd:37: return true
+core/unit/unit_base.gd:78: pass
+systems/battle_manager.gd:122: return true
+systems/battle_manager.gd:209: return true
+systems/battle_manager.gd:256: return true
+systems/battle_manager.gd:282: "clear": finish("victory")
+systems/save_manager.gd:23: return true
+systems/save_manager.gd:71: return true
+systems/save_manager.gd:119: return true
+systems/save_manager.gd:150: return true
+systems/save_manager.gd:162: return true
+ui/battle_hud.gd:199: return get_tree().root.get_node("Boot")
+ui/menu_screen.gd:174: return get_tree().root.get_node("Boot")
+tests/audit_suite.gd:19: assertions.append({"case":case_name,"assertion":description,"result":"PASS" if condition else "FAIL","evidence":str(evidence)})
+tests/audit_suite.gd:20: print("PASS " if condition else "FAIL ",case_name," / ",description," ",evidence)
+tests/audit_suite.gd:37: data=root.get_node("Data")
+tests/audit_suite.gd:38: save=root.get_node("Save")
+tests/audit_suite.gd:54: root.get_node("Audio").shutdown()
+tests/runtime_e2e.gd:24: assertions.append({"assertion":name,"result":"PASS" if condition else "FAIL","detail":str(detail)})
+tests/runtime_e2e.gd:25: print("PASS " if condition else "FAIL ",name," ",detail)
+tests/runtime_e2e.gd:29: save=root.get_node("Save")
+tests/runtime_e2e.gd:220: root.get_node("Audio").shutdown()
+tests/save_probe.gd:7: var save=root.get_node("Save")
+tests/save_probe.gd:12: save.reward_stage(root.get_node("Data").stages[0])
+tests/save_probe.gd:17: print("SAVE WRITE ","PASS" if success else "FAIL"," path=",ProjectSettings.globalize_path(save.save_path))
+tests/save_probe.gd:21: print("FRESH PROCESS LOAD ","PASS" if success else "FAIL"," state=",JSON.stringify(save.state))
+tests/test_runner.gd:15: checks.append({"case":current_case,"test":name,"result":"PASS" if condition else "FAIL","detail":detail})
+tests/test_runner.gd:16: print(("PASS " if condition else "FAIL ")+name+" "+detail)
+tests/test_runner.gd:37: data=root.get_node("Data")
+tests/test_runner.gd:38: save=root.get_node("Save")
+tests/test_runner.gd:170: root.get_node("Audio").shutdown()
+tools/generate-audio.cjs:1: // Original placeholder audio synthesis. Run from the repository root with Node.js.

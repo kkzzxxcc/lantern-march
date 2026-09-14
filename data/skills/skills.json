@@ -1,0 +1,36 @@
+[
+  {
+    "id": "sunbolt",
+    "name": "Sunbolt",
+    "key": "J",
+    "type": "projectile",
+    "mana_cost": 25,
+    "cooldown": 4,
+    "range": 620,
+    "power": 100,
+    "description": "Strike the nearest enemy ahead."
+  },
+  {
+    "id": "flare",
+    "name": "Lantern Flare",
+    "key": "K",
+    "type": "area",
+    "mana_cost": 45,
+    "cooldown": 9,
+    "range": 300,
+    "radius": 180,
+    "power": 88,
+    "description": "Burn enemies in front of you."
+  },
+  {
+    "id": "renew",
+    "name": "First Light",
+    "key": "L",
+    "type": "heal",
+    "mana_cost": 35,
+    "cooldown": 10,
+    "radius": 310,
+    "power": 105,
+    "description": "Heal yourself and nearby allies."
+  }
+]

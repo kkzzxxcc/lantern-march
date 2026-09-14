@@ -1,0 +1,20 @@
+{
+  "scope": [
+    "core",
+    "systems",
+    "ui",
+    "scenes",
+    "data",
+    "platform",
+    "tests",
+    "tools",
+    "assets"
+  ],
+  "source_files": 94,
+  "gd_files": 27,
+  "tscn_files": 7,
+  "json_files": 6,
+  "tres_res_files": 0,
+  "test_scripts": 4,
+  "gd_lines": 2881
+}

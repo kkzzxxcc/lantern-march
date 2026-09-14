@@ -1,0 +1,170 @@
+{
+	"assertion_count": 28,
+	"assertions": [
+		{
+			"assertion": "Actual configured Main Scene opens MainMenu",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Touch menu enters StageSelect",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Normal Battle Scene runs automatic physics with HUD",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Natural runtime stage 1 victory",
+			"detail": "elapsed=31.53; automatic _physics_process; no simulate() calls, damage cheats or free resources",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Victory screen shown for stage 1",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Natural reward saved and Stage 2 unlocked",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Victory routes to Upgrade screen",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "UI training debits gold and upgrades Cinder Guard",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Natural runtime stage 2 victory",
+			"detail": "elapsed=34.75; automatic _physics_process; no simulate() calls, damage cheats or free resources",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Victory screen shown for stage 2",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Observed runtime path: hero_left",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Observed runtime path: hero_right",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Observed runtime path: recovery",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Observed runtime path: friendly_spawn",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Observed runtime path: enemy_spawn",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Observed runtime path: unit_movement",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Observed runtime path: target",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Observed runtime path: damage",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Observed runtime path: death",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Observed runtime path: aura_on",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Observed runtime path: aura_off",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Observed runtime path: skill",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Observed runtime path: mana_spent",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Observed runtime path: base_damage",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Observed runtime path: projectile",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment UI equips earned drop",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Settings UI writes changed music volume",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Final gameplay state saved before process exit",
+			"detail": "",
+			"result": "PASS"
+		}
+	],
+	"automatic_physics": true,
+	"case": "runtime-e2e",
+	"failures": 0,
+	"real_main_scene": true,
+	"real_save_file": true,
+	"stages": [
+		{
+			"elapsed": 31.5333333333328,
+			"gold": 310,
+			"hero_level": 1,
+			"physics_frames": 1889,
+			"result": "victory",
+			"stage": 1,
+			"unlocked": 2
+		},
+		{
+			"elapsed": 34.7499999999993,
+			"gold": 385,
+			"hero_level": 2,
+			"physics_frames": 2082,
+			"result": "victory",
+			"stage": 2,
+			"unlocked": 3
+		}
+	]
+}

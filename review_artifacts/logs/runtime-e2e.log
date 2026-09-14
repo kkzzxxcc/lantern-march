@@ -1,0 +1,33 @@
+Godot Engine v4.6.stable.official.89cea1439 - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2570)
+PASS Actual configured Main Scene opens MainMenu 
+PASS Touch menu enters StageSelect 
+PASS Normal Battle Scene runs automatic physics with HUD 
+PASS Natural runtime stage 1 victory elapsed=31.53; automatic _physics_process; no simulate() calls, damage cheats or free resources
+PASS Victory screen shown for stage 1 
+PASS Natural reward saved and Stage 2 unlocked 
+PASS Victory routes to Upgrade screen 
+PASS UI training debits gold and upgrades Cinder Guard 
+PASS Natural runtime stage 2 victory elapsed=34.75; automatic _physics_process; no simulate() calls, damage cheats or free resources
+PASS Victory screen shown for stage 2 
+PASS Observed runtime path: hero_left 
+PASS Observed runtime path: hero_right 
+PASS Observed runtime path: recovery 
+PASS Observed runtime path: friendly_spawn 
+PASS Observed runtime path: enemy_spawn 
+PASS Observed runtime path: unit_movement 
+PASS Observed runtime path: target 
+PASS Observed runtime path: damage 
+PASS Observed runtime path: death 
+PASS Observed runtime path: aura_on 
+PASS Observed runtime path: aura_off 
+PASS Observed runtime path: skill 
+PASS Observed runtime path: mana_spent 
+PASS Observed runtime path: base_damage 
+PASS Observed runtime path: projectile 
+PASS Equipment UI equips earned drop 
+PASS Settings UI writes changed music volume 
+PASS Final gameplay state saved before process exit 
+RUNTIME E2E runtime-e2e: 1 case / 28 assertions / 0 failures

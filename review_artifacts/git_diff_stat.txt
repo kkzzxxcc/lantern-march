@@ -1,0 +1,2 @@
+﻿Command: git diff --stat
+Note: new untracked files are not included in git diff --stat; see git_status.txt.

@@ -1,0 +1,86 @@
+{
+  "wickblade": {
+    "id": "wickblade",
+    "name": "Wickblade",
+    "stats": {
+      "attack": 4
+    },
+    "slot": "weapon"
+  },
+  "sunspike": {
+    "id": "sunspike",
+    "name": "Sunspike",
+    "stats": {
+      "attack": 12
+    },
+    "slot": "weapon"
+  },
+  "iron_oath": {
+    "id": "iron_oath",
+    "name": "Iron Oath",
+    "stats": {
+      "attack": 8,
+      "defense": 5
+    },
+    "slot": "weapon"
+  },
+  "glass_staff": {
+    "id": "glass_staff",
+    "name": "Glass Staff",
+    "stats": {
+      "attack": 14,
+      "mana_recovery": 1
+    },
+    "slot": "weapon"
+  },
+  "daybreak": {
+    "id": "daybreak",
+    "name": "Daybreak",
+    "stats": {
+      "attack": 22,
+      "attack_speed": 0.2
+    },
+    "slot": "weapon"
+  },
+  "trail_ring": {
+    "id": "trail_ring",
+    "name": "Trail Ring",
+    "stats": {
+      "aura_range": 20
+    },
+    "slot": "ring"
+  },
+  "spring_loop": {
+    "id": "spring_loop",
+    "name": "Spring Loop",
+    "stats": {
+      "hp": 80
+    },
+    "slot": "ring"
+  },
+  "river_knot": {
+    "id": "river_knot",
+    "name": "River Knot",
+    "stats": {
+      "mana_recovery": 1.5
+    },
+    "slot": "ring"
+  },
+  "harvest_band": {
+    "id": "harvest_band",
+    "name": "Harvest Band",
+    "stats": {
+      "supply_recovery": 1.5
+    },
+    "slot": "ring"
+  },
+  "halo": {
+    "id": "halo",
+    "name": "Keeper Halo",
+    "stats": {
+      "aura_range": 50,
+      "defense": 4
+    },
+    "slot": "ring"
+  }
+}

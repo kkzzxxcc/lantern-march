@@ -1,0 +1,12 @@
+OS: Windows x64
+Engine: Godot 4.6.stable.official.89cea1439
+Language: GDScript
+Renderer: GL Compatibility
+Shell: PowerShell
+Node: 
+v24.16.0
+Android JDK/SDK/ADB: not found in PATH; build-tools directory unavailable
+iOS: Windows host, no macOS/Xcode
+Browser QA: Chrome extension and Codex Chromium in-app browser
+Native mobile devices: not available
+CLI save probes: APPDATA redirected to project-local .tools/userdata; no personal saves packaged

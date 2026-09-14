@@ -1,0 +1,800 @@
+{
+	"assertion_count": 115,
+	"assertions": [
+		{
+			"assertion": "8 allies boundary cycle 00",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 01",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 02",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 03",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 04",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 05",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 06",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 07",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 08",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 09",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 10",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 11",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 12",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 13",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 14",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 15",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 16",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 17",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 18",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "8 allies boundary cycle 19",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "No aura compounding",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "[120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0]",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Aura death unregisters immediately",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Target death clears reference without removing friendly aura",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Stage aura cleanup returns base stats",
+			"case": "aura_reentry_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Nearest opposite faction selected",
+			"case": "target_range_death_and_faction",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Death invalidates cached target immediately",
+			"case": "target_range_death_and_faction",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Retargets after death",
+			"case": "target_range_death_and_faction",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Public attack rejects out-of-range target",
+			"case": "target_range_death_and_faction",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "No target resumes forward movement",
+			"case": "target_range_death_and_faction",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Normal AI attacks enemy gate",
+			"case": "target_range_death_and_faction",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Attack zero still deals minimum one per formula",
+			"case": "shared_damage_and_attack_boundaries",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Defense above attack clamps to one",
+			"case": "shared_damage_and_attack_boundaries",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Zero attack speed cannot attack",
+			"case": "shared_damage_and_attack_boundaries",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Extreme attack speed bounded to one attack per physics tick",
+			"case": "shared_damage_and_attack_boundaries",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Attack on newly dead target safely ignored",
+			"case": "shared_damage_and_attack_boundaries",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Freed target safely ignored; log scanner also required",
+			"case": "shared_damage_and_attack_boundaries",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Hero range checked after movement",
+			"case": "shared_damage_and_attack_boundaries",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Acquires an inactive slot",
+			"case": "projectile_pool_acquire_release_and_saturation",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Impact damages through common path and frees slot",
+			"case": "projectile_pool_acquire_release_and_saturation",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Target death returns all associated slots",
+			"case": "projectile_pool_acquire_release_and_saturation",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Pool saturation never converts projectile into instant damage",
+			"case": "projectile_pool_acquire_release_and_saturation",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Pool does not instantiate projectile nodes",
+			"case": "projectile_pool_acquire_release_and_saturation",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Full pool rejects skill without spending mana",
+			"case": "projectile_pool_acquire_release_and_saturation",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Stage end clears all slots",
+			"case": "projectile_pool_acquire_release_and_saturation",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "30 and 60 Hz recovery match",
+			"case": "resources_delta_caps_costs_cooldowns",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Both resources clamp to maxima",
+			"case": "resources_delta_caps_costs_cooldowns",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Insufficient supply prevents spawn",
+			"case": "resources_delta_caps_costs_cooldowns",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Summon debit is exact",
+			"case": "resources_delta_caps_costs_cooldowns",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Cooldown failure never debits supply",
+			"case": "resources_delta_caps_costs_cooldowns",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Insufficient mana prevents heal skill",
+			"case": "resources_delta_caps_costs_cooldowns",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Skill mana debit is exact",
+			"case": "resources_delta_caps_costs_cooldowns",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Skill cooldown does not spend mana twice",
+			"case": "resources_delta_caps_costs_cooldowns",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Missing save uses defaults",
+			"case": "save_invalid_missing_migration_and_ownership",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Invalid values load without crash",
+			"case": "save_invalid_missing_migration_and_ownership",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Progress values sanitized",
+			"case": "save_invalid_missing_migration_and_ownership",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Ownership and duplicate slots sanitized",
+			"case": "save_invalid_missing_migration_and_ownership",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Settings sanitized",
+			"case": "save_invalid_missing_migration_and_ownership",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Malformed version handled without crash",
+			"case": "save_invalid_missing_migration_and_ownership",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Write failure is surfaced",
+			"case": "save_invalid_missing_migration_and_ownership",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Friendly roster summon cinder",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Friendly roster summon bastion",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Friendly roster summon needle",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Friendly roster summon prism",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Friendly roster summon mender",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Friendly roster summon ram",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Enemy/Boss spawn husk",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Enemy/Boss spawn skitter",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Enemy/Boss spawn bulwark",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Enemy/Boss spawn slinger",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Enemy/Boss spawn wisp",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Enemy/Boss spawn bell",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Enemy/Boss spawn cantor",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Enemy/Boss spawn warden",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Enemy/Boss spawn kiln",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Enemy/Boss spawn eclipse",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment equip wickblade",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment modifier wickblade",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment equip sunspike",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment modifier sunspike",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment equip iron_oath",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment modifier iron_oath",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment equip glass_staff",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment modifier glass_staff",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment equip daybreak",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment modifier daybreak",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment equip trail_ring",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment modifier trail_ring",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment equip spring_loop",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment modifier spring_loop",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment equip river_knot",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment modifier river_knot",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment equip harvest_band",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment modifier harvest_band",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment equip halo",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipment modifier halo",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipped weapon applies to runtime hero",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Equipped aura range applies at battle creation",
+			"case": "all_content_reachable_and_equipment_stats",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Entity and projectile bounds at 50",
+			"case": "50_and_100_entities_cpu_and_cleanup",
+			"evidence": "{ \"entities_initial\": 50, \"entities_end\": 43, \"ticks\": 300, \"tick_median_us\": 196, \"tick_p95_us\": 636, \"target_queries\": 1000, \"target_query_total_us\": 16630, \"projectile_slots\": 64, \"active_projectiles\": 0, \"memory_before\": 24003270, \"memory_after\": 24019820, \"fps\": \"NOT MEASURED: headless synchronous CPU sample\" }",
+			"result": "PASS"
+		},
+		{
+			"assertion": "No dead registry entries at 50",
+			"case": "50_and_100_entities_cpu_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Entity and projectile bounds at 100",
+			"case": "50_and_100_entities_cpu_and_cleanup",
+			"evidence": "{ \"entities_initial\": 100, \"entities_end\": 95, \"ticks\": 300, \"tick_median_us\": 251, \"tick_p95_us\": 1460, \"target_queries\": 2000, \"target_query_total_us\": 56298, \"projectile_slots\": 64, \"active_projectiles\": 0, \"memory_before\": 24531780, \"memory_after\": 24545946, \"fps\": \"NOT MEASURED: headless synchronous CPU sample\" }",
+			"result": "PASS"
+		},
+		{
+			"assertion": "No dead registry entries at 100",
+			"case": "50_and_100_entities_cpu_and_cleanup",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Failed upgrade rolls back gold and level",
+			"case": "save_transaction_rollback",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Failed equip rolls back slots",
+			"case": "save_transaction_rollback",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Failed reward rolls back progress and reports unsaved",
+			"case": "save_transaction_rollback",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Failed setting rolls back",
+			"case": "save_transaction_rollback",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Reward retry commits exactly once",
+			"case": "save_transaction_rollback",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Retry persisted without duplicate reward",
+			"case": "save_transaction_rollback",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Support stays behind healthy/buffed frontline side 0",
+			"case": "support_rear_positioning",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Support does not cross enemy side 0",
+			"case": "support_rear_positioning",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Support performs heal or buff side 0",
+			"case": "support_rear_positioning",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Dead support target released; no runaway advance side 0",
+			"case": "support_rear_positioning",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Support stays behind healthy/buffed frontline side 1",
+			"case": "support_rear_positioning",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Support does not cross enemy side 1",
+			"case": "support_rear_positioning",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Support performs heal or buff side 1",
+			"case": "support_rear_positioning",
+			"evidence": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Dead support target released; no runaway advance side 1",
+			"case": "support_rear_positioning",
+			"evidence": "",
+			"result": "PASS"
+		}
+	],
+	"case_count": 10,
+	"engine": "4.6-stable (official)",
+	"failures": 0,
+	"performance": [
+		{
+			"active_projectiles": 0,
+			"entities_end": 43,
+			"entities_initial": 50,
+			"fps": "NOT MEASURED: headless synchronous CPU sample",
+			"memory_after": 24019820,
+			"memory_before": 24003270,
+			"projectile_slots": 64,
+			"target_queries": 1000,
+			"target_query_total_us": 16630,
+			"tick_median_us": 196,
+			"tick_p95_us": 636,
+			"ticks": 300
+		},
+		{
+			"active_projectiles": 0,
+			"entities_end": 95,
+			"entities_initial": 100,
+			"fps": "NOT MEASURED: headless synchronous CPU sample",
+			"memory_after": 24545946,
+			"memory_before": 24531780,
+			"projectile_slots": 64,
+			"target_queries": 2000,
+			"target_query_total_us": 56298,
+			"tick_median_us": 251,
+			"tick_p95_us": 1460,
+			"ticks": 300
+		}
+	],
+	"test_cases": [
+		{
+			"automatic_physics": false,
+			"category": "Integration / Scene",
+			"name": "aura_reentry_and_cleanup",
+			"real_scene": true,
+			"save_file": false
+		},
+		{
+			"automatic_physics": false,
+			"category": "Integration / Scene",
+			"name": "target_range_death_and_faction",
+			"real_scene": true,
+			"save_file": false
+		},
+		{
+			"automatic_physics": false,
+			"category": "Unit / Scene",
+			"name": "shared_damage_and_attack_boundaries",
+			"real_scene": true,
+			"save_file": false
+		},
+		{
+			"automatic_physics": false,
+			"category": "Integration / Scene",
+			"name": "projectile_pool_acquire_release_and_saturation",
+			"real_scene": true,
+			"save_file": false
+		},
+		{
+			"automatic_physics": false,
+			"category": "Unit / Integration",
+			"name": "resources_delta_caps_costs_cooldowns",
+			"real_scene": true,
+			"save_file": false
+		},
+		{
+			"automatic_physics": false,
+			"category": "Save Persistence",
+			"name": "save_invalid_missing_migration_and_ownership",
+			"real_scene": true,
+			"save_file": true
+		},
+		{
+			"automatic_physics": false,
+			"category": "Scene / Integration",
+			"name": "all_content_reachable_and_equipment_stats",
+			"real_scene": true,
+			"save_file": false
+		},
+		{
+			"automatic_physics": false,
+			"category": "Performance / Scene",
+			"name": "50_and_100_entities_cpu_and_cleanup",
+			"real_scene": true,
+			"save_file": false
+		},
+		{
+			"automatic_physics": false,
+			"category": "Save Persistence / Regression",
+			"name": "save_transaction_rollback",
+			"real_scene": true,
+			"save_file": true
+		},
+		{
+			"automatic_physics": false,
+			"category": "Scene / Regression",
+			"name": "support_rear_positioning",
+			"real_scene": true,
+			"save_file": false
+		}
+	]
+}

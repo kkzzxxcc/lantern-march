@@ -1,0 +1,1 @@
+﻿Final payload allowlist scan: no cache/private paths, private key blocks or supported token patterns detected. Documentation mentions credentials descriptively; no signing material is shipped. Binary assets are original WAV and Godot Web runtime. No personal save files included. This scan is heuristic, not a universal secret detector.

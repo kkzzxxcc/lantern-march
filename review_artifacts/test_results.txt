@@ -1,0 +1,283 @@
+Executed on Windows with Godot 4.6.stable.official.89cea1439.
+Reproduction command: powershell -ExecutionPolicy Bypass -File tools/test.ps1 -Godot <absolute Godot 4.6 console executable>
+Actual automated cases: 24 = 11 focused + 10 audit + 1 runtime E2E across two processes + 1 save probe across two processes + 1 boss runtime case.
+Assertions: 237 = 84 + 115 + 28 + 4 + 2 + 4. Failures: 0.
+The previous 76 PASS claim counted assertions, not cases. Campaign stage iterations and boundary cycles are not additional cases.
+Browser observations are separate manual UI scenarios and excluded from these counts.
+Focused tests use production Battle Scene / simulate, but disable automatic physics; they are not end-to-end runtime tests.
+Runtime E2E loads configured Main Scene, uses automatic physics and input, and wins stages 1 and 2 naturally. --fixed-fps 60 accelerates wall time and is not a 60 FPS performance measurement.
+Save probe uses production SaveManager and a separate process.
+Only the Windows root certificate store error is exempted in tools/test.ps1. No other error/warning allowed.
+
+FILE: artifacts/tests.log
+Godot Engine v4.6.stable.official.89cea1439 - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2570)
+PASS Data schema and enemy references []
+PASS MVP data counts 6 allies, 8 enemies + 2 bosses, 10 stages, 10 equipment, 3 skills
+PASS InputMap move_left 
+PASS InputMap move_right 
+PASS InputMap summon_unit_1 
+PASS InputMap summon_unit_2 
+PASS InputMap summon_unit_3 
+PASS InputMap summon_unit_4 
+PASS InputMap summon_unit_5 
+PASS InputMap summon_unit_6 
+PASS InputMap skill_1 
+PASS InputMap skill_2 
+PASS InputMap skill_3 
+PASS InputMap pause 
+PASS InputMap debug_toggle 
+PASS Battle scene construction 
+PASS Hero movement via InputMap 
+PASS Hero reverse movement 
+PASS Supply and mana recovery 
+PASS Unit summon 
+PASS Supply debit 
+PASS Spawn cooldown rejects duplicate 
+PASS Aura apply attack modifier 
+PASS Aura speed and defense modifiers 
+PASS Aura removes without stat drift 
+PASS CombatCalculator subtraction 
+PASS Minimum damage is one 
+PASS Hero projectile skill 
+PASS Projectile damages and kills target 
+PASS Dead entity immediately removed from registry 
+PASS Area skill hits multiple enemies 
+PASS Heal skill restores hero 
+PASS Timed enemy spawning 
+PASS Pause freezes combat and resources 
+PASS Enemy gate death triggers victory 
+PASS Battle restart resets transient state 
+PASS Hero death triggers defeat 
+PASS Friendly gate defeat rule 
+PASS Boss scheduled spawn 
+PASS Boss phase transition 
+PASS Boss death victory condition 
+PASS Victory reward, equipment drop and stage unlock 
+PASS Permanent unit upgrade purchase 
+PASS Equipment stats and ownership 
+PASS Equipment slot type rejection 
+PASS Unowned equipment rejected 
+PASS Save write 
+PASS Save reload restores progress 
+PASS Corrupt save backup recovery 
+PASS Save version 0 migration 
+PASS Future save is not overwritten 
+PASS Natural Stage 1 full combat loop result=victory time=31.4s skills=4 blessings=0 wall=106ms (normal costs, no damage cheats)
+PASS Entity stress construction 99 entities including 48 friendly + 48 enemy
+PASS Entity stress bounded simulation 600 ticks 233.00ms, 0.388ms per tick (headless CPU; not mobile FPS)
+PASS Healer selects wounded friendly target 
+PASS Healer unit restores health 
+PASS Support targets allied enemy faction 
+PASS Support unit applies timed buff 
+PASS Support buff expires without drift 
+PASS Siege double base damage through projectile 
+PASS Battle EXP preserves simultaneous kills while choosing 
+PASS Selected battle blessing applies 
+PASS Boot opens MainMenu 
+PASS Menu button accepts touch 
+PASS Scene route stage_select 
+PASS Scene route upgrade 
+PASS Scene route equipment 
+PASS Scene route settings 
+PASS Battle HUD six summons and three skills 
+PASS Touch summon dispatches InputMap exactly once count=1 supply=25.0 rect=[P: (172.0, 1168.0), S: (112.0, 90.0)] viewport=(64, 64)
+PASS Multitouch movement plus skill move=190.0 cooldown=9.5 pressed=true
+PASS Touch release outside button clears movement 
+PASS UI victory reward unlock save integration 
+PASS Stage 2 can start after victory 
+PASS Campaign stage 01 result=victory duration=30.5s level=1 entities=10
+PASS Campaign stage 02 result=victory duration=32.5s level=1 entities=10
+PASS Campaign stage 03 result=victory duration=36.1s level=2 entities=11
+PASS Campaign stage 04 result=victory duration=36.2s level=2 entities=11
+PASS Campaign stage 05 result=victory duration=45.9s level=2 entities=12
+PASS Campaign stage 06 result=victory duration=40.5s level=2 entities=12
+PASS Campaign stage 07 result=victory duration=40.9s level=2 entities=12
+PASS Campaign stage 08 result=victory duration=43.3s level=2 entities=13
+PASS Campaign stage 09 result=victory duration=44.9s level=2 entities=13
+PASS Campaign stage 10 result=victory duration=137.4s level=5 entities=13
+TESTS COMPLETE: 84 checks, 0 failures
+
+FILE: artifacts/audit-tests.log
+Godot Engine v4.6.stable.official.89cea1439 - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2570)
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 00 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 01 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 02 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 03 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 04 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 05 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 06 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 07 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 08 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 09 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 10 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 11 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 12 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 13 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 14 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 15 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 16 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 17 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 18 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 19 
+PASS aura_reentry_and_cleanup / No aura compounding [120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0]
+PASS aura_reentry_and_cleanup / Aura death unregisters immediately 
+PASS aura_reentry_and_cleanup / Target death clears reference without removing friendly aura 
+PASS aura_reentry_and_cleanup / Stage aura cleanup returns base stats 
+PASS target_range_death_and_faction / Nearest opposite faction selected 
+PASS target_range_death_and_faction / Death invalidates cached target immediately 
+PASS target_range_death_and_faction / Retargets after death 
+PASS target_range_death_and_faction / Public attack rejects out-of-range target 
+PASS target_range_death_and_faction / No target resumes forward movement 
+PASS target_range_death_and_faction / Normal AI attacks enemy gate 
+PASS shared_damage_and_attack_boundaries / Attack zero still deals minimum one per formula 
+PASS shared_damage_and_attack_boundaries / Defense above attack clamps to one 
+PASS shared_damage_and_attack_boundaries / Zero attack speed cannot attack 
+PASS shared_damage_and_attack_boundaries / Extreme attack speed bounded to one attack per physics tick 
+PASS shared_damage_and_attack_boundaries / Attack on newly dead target safely ignored 
+PASS shared_damage_and_attack_boundaries / Freed target safely ignored; log scanner also required 
+PASS shared_damage_and_attack_boundaries / Hero range checked after movement 
+PASS projectile_pool_acquire_release_and_saturation / Acquires an inactive slot 
+PASS projectile_pool_acquire_release_and_saturation / Impact damages through common path and frees slot 
+PASS projectile_pool_acquire_release_and_saturation / Target death returns all associated slots 
+PASS projectile_pool_acquire_release_and_saturation / Pool saturation never converts projectile into instant damage 
+PASS projectile_pool_acquire_release_and_saturation / Pool does not instantiate projectile nodes 
+PASS projectile_pool_acquire_release_and_saturation / Full pool rejects skill without spending mana 
+PASS projectile_pool_acquire_release_and_saturation / Stage end clears all slots 
+PASS resources_delta_caps_costs_cooldowns / 30 and 60 Hz recovery match 
+PASS resources_delta_caps_costs_cooldowns / Both resources clamp to maxima 
+PASS resources_delta_caps_costs_cooldowns / Insufficient supply prevents spawn 
+PASS resources_delta_caps_costs_cooldowns / Summon debit is exact 
+PASS resources_delta_caps_costs_cooldowns / Cooldown failure never debits supply 
+PASS resources_delta_caps_costs_cooldowns / Insufficient mana prevents heal skill 
+PASS resources_delta_caps_costs_cooldowns / Skill mana debit is exact 
+PASS resources_delta_caps_costs_cooldowns / Skill cooldown does not spend mana twice 
+PASS save_invalid_missing_migration_and_ownership / Missing save uses defaults 
+PASS save_invalid_missing_migration_and_ownership / Invalid values load without crash 
+PASS save_invalid_missing_migration_and_ownership / Progress values sanitized 
+PASS save_invalid_missing_migration_and_ownership / Ownership and duplicate slots sanitized 
+PASS save_invalid_missing_migration_and_ownership / Settings sanitized 
+PASS save_invalid_missing_migration_and_ownership / Malformed version handled without crash 
+PASS save_invalid_missing_migration_and_ownership / Write failure is surfaced 
+PASS all_content_reachable_and_equipment_stats / Friendly roster summon cinder 
+PASS all_content_reachable_and_equipment_stats / Friendly roster summon bastion 
+PASS all_content_reachable_and_equipment_stats / Friendly roster summon needle 
+PASS all_content_reachable_and_equipment_stats / Friendly roster summon prism 
+PASS all_content_reachable_and_equipment_stats / Friendly roster summon mender 
+PASS all_content_reachable_and_equipment_stats / Friendly roster summon ram 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn husk 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn skitter 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn bulwark 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn slinger 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn wisp 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn bell 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn cantor 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn warden 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn kiln 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn eclipse 
+PASS all_content_reachable_and_equipment_stats / Equipment equip wickblade 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier wickblade 
+PASS all_content_reachable_and_equipment_stats / Equipment equip sunspike 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier sunspike 
+PASS all_content_reachable_and_equipment_stats / Equipment equip iron_oath 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier iron_oath 
+PASS all_content_reachable_and_equipment_stats / Equipment equip glass_staff 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier glass_staff 
+PASS all_content_reachable_and_equipment_stats / Equipment equip daybreak 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier daybreak 
+PASS all_content_reachable_and_equipment_stats / Equipment equip trail_ring 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier trail_ring 
+PASS all_content_reachable_and_equipment_stats / Equipment equip spring_loop 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier spring_loop 
+PASS all_content_reachable_and_equipment_stats / Equipment equip river_knot 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier river_knot 
+PASS all_content_reachable_and_equipment_stats / Equipment equip harvest_band 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier harvest_band 
+PASS all_content_reachable_and_equipment_stats / Equipment equip halo 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier halo 
+PASS all_content_reachable_and_equipment_stats / Equipped weapon applies to runtime hero 
+PASS all_content_reachable_and_equipment_stats / Equipped aura range applies at battle creation 
+PASS 50_and_100_entities_cpu_and_cleanup / Entity and projectile bounds at 50 { "entities_initial": 50, "entities_end": 43, "ticks": 300, "tick_median_us": 196, "tick_p95_us": 636, "target_queries": 1000, "target_query_total_us": 16630, "projectile_slots": 64, "active_projectiles": 0, "memory_before": 24003270, "memory_after": 24019820, "fps": "NOT MEASURED: headless synchronous CPU sample" }
+PASS 50_and_100_entities_cpu_and_cleanup / No dead registry entries at 50 
+PASS 50_and_100_entities_cpu_and_cleanup / Entity and projectile bounds at 100 { "entities_initial": 100, "entities_end": 95, "ticks": 300, "tick_median_us": 251, "tick_p95_us": 1460, "target_queries": 2000, "target_query_total_us": 56298, "projectile_slots": 64, "active_projectiles": 0, "memory_before": 24531780, "memory_after": 24545946, "fps": "NOT MEASURED: headless synchronous CPU sample" }
+PASS 50_and_100_entities_cpu_and_cleanup / No dead registry entries at 100 
+PASS save_transaction_rollback / Failed upgrade rolls back gold and level 
+PASS save_transaction_rollback / Failed equip rolls back slots 
+PASS save_transaction_rollback / Failed reward rolls back progress and reports unsaved 
+PASS save_transaction_rollback / Failed setting rolls back 
+PASS save_transaction_rollback / Reward retry commits exactly once 
+PASS save_transaction_rollback / Retry persisted without duplicate reward 
+PASS support_rear_positioning / Support stays behind healthy/buffed frontline side 0 
+PASS support_rear_positioning / Support does not cross enemy side 0 
+PASS support_rear_positioning / Support performs heal or buff side 0 
+PASS support_rear_positioning / Dead support target released; no runaway advance side 0 
+PASS support_rear_positioning / Support stays behind healthy/buffed frontline side 1 
+PASS support_rear_positioning / Support does not cross enemy side 1 
+PASS support_rear_positioning / Support performs heal or buff side 1 
+PASS support_rear_positioning / Dead support target released; no runaway advance side 1 
+AUDIT SUITE: 10 cases / 115 assertions / 0 failures
+
+FILE: artifacts/runtime-e2e.log
+Godot Engine v4.6.stable.official.89cea1439 - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2570)
+PASS Actual configured Main Scene opens MainMenu 
+PASS Touch menu enters StageSelect 
+PASS Normal Battle Scene runs automatic physics with HUD 
+PASS Natural runtime stage 1 victory elapsed=31.53; automatic _physics_process; no simulate() calls, damage cheats or free resources
+PASS Victory screen shown for stage 1 
+PASS Natural reward saved and Stage 2 unlocked 
+PASS Victory routes to Upgrade screen 
+PASS UI training debits gold and upgrades Cinder Guard 
+PASS Natural runtime stage 2 victory elapsed=34.75; automatic _physics_process; no simulate() calls, damage cheats or free resources
+PASS Victory screen shown for stage 2 
+PASS Observed runtime path: hero_left 
+PASS Observed runtime path: hero_right 
+PASS Observed runtime path: recovery 
+PASS Observed runtime path: friendly_spawn 
+PASS Observed runtime path: enemy_spawn 
+PASS Observed runtime path: unit_movement 
+PASS Observed runtime path: target 
+PASS Observed runtime path: damage 
+PASS Observed runtime path: death 
+PASS Observed runtime path: aura_on 
+PASS Observed runtime path: aura_off 
+PASS Observed runtime path: skill 
+PASS Observed runtime path: mana_spent 
+PASS Observed runtime path: base_damage 
+PASS Observed runtime path: projectile 
+PASS Equipment UI equips earned drop 
+PASS Settings UI writes changed music volume 
+PASS Final gameplay state saved before process exit 
+RUNTIME E2E runtime-e2e: 1 case / 28 assertions / 0 failures
+
+FILE: artifacts/runtime-e2e-reload.log
+Godot Engine v4.6.stable.official.89cea1439 - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2570)
+PASS Fresh process reads E2E save 
+PASS Fresh process restores actual stage victories 
+PASS Fresh process restores earned hero and purchased unit levels 
+PASS All saved fields equal previous runtime process { "save_version": 1, "gold": 385, "hero_level": 2, "hero_exp": 30, "unit_levels": { "cinder": 2 }, "owned_equipment": ["wickblade", "trail_ring", "sunspike", "spring_loop"], "equipped": { "weapon": "sunspike", "ring_a": "trail_ring", "ring_b": "" }, "unlocked_stage": 3, "cleared": [1, 2], "settings": { "master": 0.8, "music": 0.32, "sfx": 0.7, "mute": false } }
+RUNTIME E2E runtime-e2e-reload: 1 case / 4 assertions / 0 failures
+
+FILE: artifacts/save-write.log
+Godot Engine v4.6.stable.official.89cea1439 - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2570)
+SAVE WRITE PASS path=C:/Users/user/Documents/ChatGPT/Paladog/.tools/userdata/LanternMarch/restart-probe.json
+
+FILE: artifacts/save-read.log
+Godot Engine v4.6.stable.official.89cea1439 - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2570)
+FRESH PROCESS LOAD PASS state={"cleared":[1],"equipped":{"ring_a":"trail_ring","ring_b":"","weapon":"sunspike"},"gold":210,"hero_exp":45,"hero_level":1,"owned_equipment":["wickblade","trail_ring","sunspike"],"save_version":1,"settings":{"master":0.8,"music":0.32,"mute":false,"sfx":0.7},"unit_levels":{"cinder":2},"unlocked_stage":2}

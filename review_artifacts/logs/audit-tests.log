@@ -1,0 +1,120 @@
+Godot Engine v4.6.stable.official.89cea1439 - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2570)
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 00 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 01 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 02 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 03 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 04 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 05 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 06 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 07 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 08 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 09 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 10 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 11 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 12 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 13 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 14 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 15 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 16 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 17 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 18 
+PASS aura_reentry_and_cleanup / 8 allies boundary cycle 19 
+PASS aura_reentry_and_cleanup / No aura compounding [120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0, 120.0, 100.0]
+PASS aura_reentry_and_cleanup / Aura death unregisters immediately 
+PASS aura_reentry_and_cleanup / Target death clears reference without removing friendly aura 
+PASS aura_reentry_and_cleanup / Stage aura cleanup returns base stats 
+PASS target_range_death_and_faction / Nearest opposite faction selected 
+PASS target_range_death_and_faction / Death invalidates cached target immediately 
+PASS target_range_death_and_faction / Retargets after death 
+PASS target_range_death_and_faction / Public attack rejects out-of-range target 
+PASS target_range_death_and_faction / No target resumes forward movement 
+PASS target_range_death_and_faction / Normal AI attacks enemy gate 
+PASS shared_damage_and_attack_boundaries / Attack zero still deals minimum one per formula 
+PASS shared_damage_and_attack_boundaries / Defense above attack clamps to one 
+PASS shared_damage_and_attack_boundaries / Zero attack speed cannot attack 
+PASS shared_damage_and_attack_boundaries / Extreme attack speed bounded to one attack per physics tick 
+PASS shared_damage_and_attack_boundaries / Attack on newly dead target safely ignored 
+PASS shared_damage_and_attack_boundaries / Freed target safely ignored; log scanner also required 
+PASS shared_damage_and_attack_boundaries / Hero range checked after movement 
+PASS projectile_pool_acquire_release_and_saturation / Acquires an inactive slot 
+PASS projectile_pool_acquire_release_and_saturation / Impact damages through common path and frees slot 
+PASS projectile_pool_acquire_release_and_saturation / Target death returns all associated slots 
+PASS projectile_pool_acquire_release_and_saturation / Pool saturation never converts projectile into instant damage 
+PASS projectile_pool_acquire_release_and_saturation / Pool does not instantiate projectile nodes 
+PASS projectile_pool_acquire_release_and_saturation / Full pool rejects skill without spending mana 
+PASS projectile_pool_acquire_release_and_saturation / Stage end clears all slots 
+PASS resources_delta_caps_costs_cooldowns / 30 and 60 Hz recovery match 
+PASS resources_delta_caps_costs_cooldowns / Both resources clamp to maxima 
+PASS resources_delta_caps_costs_cooldowns / Insufficient supply prevents spawn 
+PASS resources_delta_caps_costs_cooldowns / Summon debit is exact 
+PASS resources_delta_caps_costs_cooldowns / Cooldown failure never debits supply 
+PASS resources_delta_caps_costs_cooldowns / Insufficient mana prevents heal skill 
+PASS resources_delta_caps_costs_cooldowns / Skill mana debit is exact 
+PASS resources_delta_caps_costs_cooldowns / Skill cooldown does not spend mana twice 
+PASS save_invalid_missing_migration_and_ownership / Missing save uses defaults 
+PASS save_invalid_missing_migration_and_ownership / Invalid values load without crash 
+PASS save_invalid_missing_migration_and_ownership / Progress values sanitized 
+PASS save_invalid_missing_migration_and_ownership / Ownership and duplicate slots sanitized 
+PASS save_invalid_missing_migration_and_ownership / Settings sanitized 
+PASS save_invalid_missing_migration_and_ownership / Malformed version handled without crash 
+PASS save_invalid_missing_migration_and_ownership / Write failure is surfaced 
+PASS all_content_reachable_and_equipment_stats / Friendly roster summon cinder 
+PASS all_content_reachable_and_equipment_stats / Friendly roster summon bastion 
+PASS all_content_reachable_and_equipment_stats / Friendly roster summon needle 
+PASS all_content_reachable_and_equipment_stats / Friendly roster summon prism 
+PASS all_content_reachable_and_equipment_stats / Friendly roster summon mender 
+PASS all_content_reachable_and_equipment_stats / Friendly roster summon ram 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn husk 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn skitter 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn bulwark 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn slinger 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn wisp 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn bell 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn cantor 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn warden 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn kiln 
+PASS all_content_reachable_and_equipment_stats / Enemy/Boss spawn eclipse 
+PASS all_content_reachable_and_equipment_stats / Equipment equip wickblade 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier wickblade 
+PASS all_content_reachable_and_equipment_stats / Equipment equip sunspike 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier sunspike 
+PASS all_content_reachable_and_equipment_stats / Equipment equip iron_oath 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier iron_oath 
+PASS all_content_reachable_and_equipment_stats / Equipment equip glass_staff 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier glass_staff 
+PASS all_content_reachable_and_equipment_stats / Equipment equip daybreak 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier daybreak 
+PASS all_content_reachable_and_equipment_stats / Equipment equip trail_ring 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier trail_ring 
+PASS all_content_reachable_and_equipment_stats / Equipment equip spring_loop 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier spring_loop 
+PASS all_content_reachable_and_equipment_stats / Equipment equip river_knot 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier river_knot 
+PASS all_content_reachable_and_equipment_stats / Equipment equip harvest_band 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier harvest_band 
+PASS all_content_reachable_and_equipment_stats / Equipment equip halo 
+PASS all_content_reachable_and_equipment_stats / Equipment modifier halo 
+PASS all_content_reachable_and_equipment_stats / Equipped weapon applies to runtime hero 
+PASS all_content_reachable_and_equipment_stats / Equipped aura range applies at battle creation 
+PASS 50_and_100_entities_cpu_and_cleanup / Entity and projectile bounds at 50 { "entities_initial": 50, "entities_end": 43, "ticks": 300, "tick_median_us": 196, "tick_p95_us": 636, "target_queries": 1000, "target_query_total_us": 16630, "projectile_slots": 64, "active_projectiles": 0, "memory_before": 24003270, "memory_after": 24019820, "fps": "NOT MEASURED: headless synchronous CPU sample" }
+PASS 50_and_100_entities_cpu_and_cleanup / No dead registry entries at 50 
+PASS 50_and_100_entities_cpu_and_cleanup / Entity and projectile bounds at 100 { "entities_initial": 100, "entities_end": 95, "ticks": 300, "tick_median_us": 251, "tick_p95_us": 1460, "target_queries": 2000, "target_query_total_us": 56298, "projectile_slots": 64, "active_projectiles": 0, "memory_before": 24531780, "memory_after": 24545946, "fps": "NOT MEASURED: headless synchronous CPU sample" }
+PASS 50_and_100_entities_cpu_and_cleanup / No dead registry entries at 100 
+PASS save_transaction_rollback / Failed upgrade rolls back gold and level 
+PASS save_transaction_rollback / Failed equip rolls back slots 
+PASS save_transaction_rollback / Failed reward rolls back progress and reports unsaved 
+PASS save_transaction_rollback / Failed setting rolls back 
+PASS save_transaction_rollback / Reward retry commits exactly once 
+PASS save_transaction_rollback / Retry persisted without duplicate reward 
+PASS support_rear_positioning / Support stays behind healthy/buffed frontline side 0 
+PASS support_rear_positioning / Support does not cross enemy side 0 
+PASS support_rear_positioning / Support performs heal or buff side 0 
+PASS support_rear_positioning / Dead support target released; no runaway advance side 0 
+PASS support_rear_positioning / Support stays behind healthy/buffed frontline side 1 
+PASS support_rear_positioning / Support does not cross enemy side 1 
+PASS support_rear_positioning / Support performs heal or buff side 1 
+PASS support_rear_positioning / Dead support target released; no runaway advance side 1 
+AUDIT SUITE: 10 cases / 115 assertions / 0 failures

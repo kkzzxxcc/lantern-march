@@ -1,0 +1,68 @@
+{
+  "supply_max": 100,
+  "supply_start": 45,
+  "supply_recovery": 6,
+  "mana_max": 100,
+  "mana_start": 50,
+  "mana_recovery": 3,
+  "entity_cap": 100,
+  "friendly_cap": 48,
+  "enemy_cap": 48,
+  "projectile_cap": 64,
+  "target_interval": 0.2,
+  "spatial_interval": 0.1,
+  "spatial_bucket": 200,
+  "aura_interval": 0.12,
+  "aura": {
+    "range": 215,
+    "attack": 0.2,
+    "attack_speed": 0.15,
+    "defense": 0.15
+  },
+  "hero": {
+    "id": "hero",
+    "name": "Keeper Sol",
+    "role": "hero",
+    "hp": 580,
+    "attack": 32,
+    "defense": 7,
+    "attack_speed": 1,
+    "move_speed": 190,
+    "attack_range": 100,
+    "supply_cost": 0,
+    "spawn_cooldown": 0,
+    "attack_type": "melee",
+    "color": "#f1cd85"
+  },
+  "battle_upgrades": [
+    {
+      "id": "attack",
+      "name": "Steady Hands",
+      "description": "All friendly attack +10%",
+      "stat": "attack",
+      "value": 0.1
+    },
+    {
+      "id": "aura",
+      "name": "A Wider Light",
+      "description": "Aura radius +15%",
+      "stat": "aura_range",
+      "value": 0.15
+    },
+    {
+      "id": "supply",
+      "name": "Full Packs",
+      "description": "Supply recovery +10%",
+      "stat": "supply_recovery",
+      "value": 0.1
+    },
+    {
+      "id": "mana",
+      "name": "Living Flame",
+      "description": "Mana recovery +15%",
+      "stat": "mana_recovery",
+      "value": 0.15
+    }
+  ],
+  "battle_exp_base": 70
+}

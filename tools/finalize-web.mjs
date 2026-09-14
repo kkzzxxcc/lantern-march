@@ -1,0 +1,34 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import path from 'node:path';
+const root=path.resolve('build/web');
+const digest=crypto.createHash('sha256');
+for(const f of ['index.js','index.wasm','index.pck']) digest.update(fs.readFileSync(path.join(root,f)));
+const version=digest.digest('hex').slice(0,16), prefix='lm-'+version;
+let html=fs.readFileSync(path.join(root,'index.html'),'utf8');
+const originals=fs.readdirSync(root).filter(f=>f.startsWith('index.')&&!['index.html','index.service.worker.js','index.manifest.json'].includes(f));
+for(const f of originals) fs.renameSync(path.join(root,f),path.join(root,f.replace(/^index/,prefix)));
+html=html.replaceAll('index.',prefix+'.').replace('"executable":"index"','"executable":"'+prefix+'"').replaceAll(prefix+'.service.worker.js','service-worker.js').replaceAll(prefix+'.manifest.json','manifest.webmanifest').replace('initial-scale=1.0','initial-scale=1.0, viewport-fit=cover');
+html=html.replace('</head>','<meta name="theme-color" content="#0d252e">\n</head>');
+html=html.replace('</body>',`<script>if('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('service-worker.js').catch(console.warn));</script></body>`);
+fs.writeFileSync(path.join(root,'index.html'),html);
+const manifest=JSON.parse(fs.readFileSync(path.join(root,'index.manifest.json'),'utf8'));
+Object.assign(manifest,{id:'./',scope:'./',start_url:'./index.html',short_name:'Lantern March',theme_color:'#0d252e',background_color:'#0d252e'});
+for(const icon of manifest.icons)icon.src=icon.src.replace(/^index/,prefix);
+fs.writeFileSync(path.join(root,'manifest.webmanifest'),JSON.stringify(manifest,null,2));
+for(const f of ['index.service.worker.js','index.manifest.json']) fs.unlinkSync(path.join(root,f));
+const assets=['index.html','manifest.webmanifest',...originals.map(f=>f.replace(/^index/,prefix))];
+fs.writeFileSync(path.join(root,'service-worker.js'),`// Atomic install; no skipWaiting: active sessions keep their release cache.
+const CACHE='lantern-march-${version}';
+const ASSETS=${JSON.stringify(assets)};
+self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS))));
+self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>(k.startsWith('lantern-march-')||k.startsWith('Lantern March-sw-cache-'))&&k!==CACHE).map(k=>caches.delete(k))))));
+self.addEventListener('fetch',e=>{
+ if(e.request.method!=='GET'||new URL(e.request.url).origin!==self.location.origin)return;
+ if(e.request.mode==='navigate')e.respondWith(fetch(e.request).catch(()=>caches.open(CACHE).then(c=>c.match('index.html'))));
+ else e.respondWith(caches.open(CACHE).then(c=>c.match(e.request)).then(r=>r||fetch(e.request)));
+});
+`);
+fs.writeFileSync(path.join(root,'release.json'),JSON.stringify({version,engine:'4.6-stable',build:'release',threaded:false,assets},null,2));
+fs.writeFileSync(path.join(root,'.gdignore'),'Generated Web build.\n');
+console.log('Versioned Web release '+version+'; atomic cache install, hashed asset URLs.');

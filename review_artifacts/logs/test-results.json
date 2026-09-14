@@ -1,0 +1,591 @@
+{
+	"assertion_count": 84,
+	"case_count": 11,
+	"checks": [
+		{
+			"case": "catalog_and_input",
+			"detail": "[]",
+			"result": "PASS",
+			"test": "Data schema and enemy references"
+		},
+		{
+			"case": "catalog_and_input",
+			"detail": "6 allies, 8 enemies + 2 bosses, 10 stages, 10 equipment, 3 skills",
+			"result": "PASS",
+			"test": "MVP data counts"
+		},
+		{
+			"case": "catalog_and_input",
+			"detail": "",
+			"result": "PASS",
+			"test": "InputMap move_left"
+		},
+		{
+			"case": "catalog_and_input",
+			"detail": "",
+			"result": "PASS",
+			"test": "InputMap move_right"
+		},
+		{
+			"case": "catalog_and_input",
+			"detail": "",
+			"result": "PASS",
+			"test": "InputMap summon_unit_1"
+		},
+		{
+			"case": "catalog_and_input",
+			"detail": "",
+			"result": "PASS",
+			"test": "InputMap summon_unit_2"
+		},
+		{
+			"case": "catalog_and_input",
+			"detail": "",
+			"result": "PASS",
+			"test": "InputMap summon_unit_3"
+		},
+		{
+			"case": "catalog_and_input",
+			"detail": "",
+			"result": "PASS",
+			"test": "InputMap summon_unit_4"
+		},
+		{
+			"case": "catalog_and_input",
+			"detail": "",
+			"result": "PASS",
+			"test": "InputMap summon_unit_5"
+		},
+		{
+			"case": "catalog_and_input",
+			"detail": "",
+			"result": "PASS",
+			"test": "InputMap summon_unit_6"
+		},
+		{
+			"case": "catalog_and_input",
+			"detail": "",
+			"result": "PASS",
+			"test": "InputMap skill_1"
+		},
+		{
+			"case": "catalog_and_input",
+			"detail": "",
+			"result": "PASS",
+			"test": "InputMap skill_2"
+		},
+		{
+			"case": "catalog_and_input",
+			"detail": "",
+			"result": "PASS",
+			"test": "InputMap skill_3"
+		},
+		{
+			"case": "catalog_and_input",
+			"detail": "",
+			"result": "PASS",
+			"test": "InputMap pause"
+		},
+		{
+			"case": "catalog_and_input",
+			"detail": "",
+			"result": "PASS",
+			"test": "InputMap debug_toggle"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Battle scene construction"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Hero movement via InputMap"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Hero reverse movement"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Supply and mana recovery"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Unit summon"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Supply debit"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Spawn cooldown rejects duplicate"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Aura apply attack modifier"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Aura speed and defense modifiers"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Aura removes without stat drift"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "CombatCalculator subtraction"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Minimum damage is one"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Hero projectile skill"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Projectile damages and kills target"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Dead entity immediately removed from registry"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Area skill hits multiple enemies"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Heal skill restores hero"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Timed enemy spawning"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Pause freezes combat and resources"
+		},
+		{
+			"case": "battle_core",
+			"detail": "",
+			"result": "PASS",
+			"test": "Enemy gate death triggers victory"
+		},
+		{
+			"case": "restart_and_hero_defeat",
+			"detail": "",
+			"result": "PASS",
+			"test": "Battle restart resets transient state"
+		},
+		{
+			"case": "restart_and_hero_defeat",
+			"detail": "",
+			"result": "PASS",
+			"test": "Hero death triggers defeat"
+		},
+		{
+			"case": "friendly_base_defeat",
+			"detail": "",
+			"result": "PASS",
+			"test": "Friendly gate defeat rule"
+		},
+		{
+			"case": "boss_phase_and_victory",
+			"detail": "",
+			"result": "PASS",
+			"test": "Boss scheduled spawn"
+		},
+		{
+			"case": "boss_phase_and_victory",
+			"detail": "",
+			"result": "PASS",
+			"test": "Boss phase transition"
+		},
+		{
+			"case": "boss_phase_and_victory",
+			"detail": "",
+			"result": "PASS",
+			"test": "Boss death victory condition"
+		},
+		{
+			"case": "save_progress_and_recovery",
+			"detail": "",
+			"result": "PASS",
+			"test": "Victory reward, equipment drop and stage unlock"
+		},
+		{
+			"case": "save_progress_and_recovery",
+			"detail": "",
+			"result": "PASS",
+			"test": "Permanent unit upgrade purchase"
+		},
+		{
+			"case": "save_progress_and_recovery",
+			"detail": "",
+			"result": "PASS",
+			"test": "Equipment stats and ownership"
+		},
+		{
+			"case": "save_progress_and_recovery",
+			"detail": "",
+			"result": "PASS",
+			"test": "Equipment slot type rejection"
+		},
+		{
+			"case": "save_progress_and_recovery",
+			"detail": "",
+			"result": "PASS",
+			"test": "Unowned equipment rejected"
+		},
+		{
+			"case": "save_progress_and_recovery",
+			"detail": "",
+			"result": "PASS",
+			"test": "Save write"
+		},
+		{
+			"case": "save_progress_and_recovery",
+			"detail": "",
+			"result": "PASS",
+			"test": "Save reload restores progress"
+		},
+		{
+			"case": "save_progress_and_recovery",
+			"detail": "",
+			"result": "PASS",
+			"test": "Corrupt save backup recovery"
+		},
+		{
+			"case": "save_progress_and_recovery",
+			"detail": "",
+			"result": "PASS",
+			"test": "Save version 0 migration"
+		},
+		{
+			"case": "save_progress_and_recovery",
+			"detail": "",
+			"result": "PASS",
+			"test": "Future save is not overwritten"
+		},
+		{
+			"case": "stage_one_policy",
+			"detail": "result=victory time=31.4s skills=4 blessings=0 wall=106ms (normal costs, no damage cheats)",
+			"result": "PASS",
+			"test": "Natural Stage 1 full combat loop"
+		},
+		{
+			"case": "entity_99",
+			"detail": "99 entities including 48 friendly + 48 enemy",
+			"result": "PASS",
+			"test": "Entity stress construction"
+		},
+		{
+			"case": "entity_99",
+			"detail": "600 ticks 233.00ms, 0.388ms per tick (headless CPU; not mobile FPS)",
+			"result": "PASS",
+			"test": "Entity stress bounded simulation"
+		},
+		{
+			"case": "healer_support_siege_exp",
+			"detail": "",
+			"result": "PASS",
+			"test": "Healer selects wounded friendly target"
+		},
+		{
+			"case": "healer_support_siege_exp",
+			"detail": "",
+			"result": "PASS",
+			"test": "Healer unit restores health"
+		},
+		{
+			"case": "healer_support_siege_exp",
+			"detail": "",
+			"result": "PASS",
+			"test": "Support targets allied enemy faction"
+		},
+		{
+			"case": "healer_support_siege_exp",
+			"detail": "",
+			"result": "PASS",
+			"test": "Support unit applies timed buff"
+		},
+		{
+			"case": "healer_support_siege_exp",
+			"detail": "",
+			"result": "PASS",
+			"test": "Support buff expires without drift"
+		},
+		{
+			"case": "healer_support_siege_exp",
+			"detail": "",
+			"result": "PASS",
+			"test": "Siege double base damage through projectile"
+		},
+		{
+			"case": "healer_support_siege_exp",
+			"detail": "",
+			"result": "PASS",
+			"test": "Battle EXP preserves simultaneous kills while choosing"
+		},
+		{
+			"case": "healer_support_siege_exp",
+			"detail": "",
+			"result": "PASS",
+			"test": "Selected battle blessing applies"
+		},
+		{
+			"case": "ui_and_multitouch",
+			"detail": "",
+			"result": "PASS",
+			"test": "Boot opens MainMenu"
+		},
+		{
+			"case": "ui_and_multitouch",
+			"detail": "",
+			"result": "PASS",
+			"test": "Menu button accepts touch"
+		},
+		{
+			"case": "ui_and_multitouch",
+			"detail": "",
+			"result": "PASS",
+			"test": "Scene route stage_select"
+		},
+		{
+			"case": "ui_and_multitouch",
+			"detail": "",
+			"result": "PASS",
+			"test": "Scene route upgrade"
+		},
+		{
+			"case": "ui_and_multitouch",
+			"detail": "",
+			"result": "PASS",
+			"test": "Scene route equipment"
+		},
+		{
+			"case": "ui_and_multitouch",
+			"detail": "",
+			"result": "PASS",
+			"test": "Scene route settings"
+		},
+		{
+			"case": "ui_and_multitouch",
+			"detail": "",
+			"result": "PASS",
+			"test": "Battle HUD six summons and three skills"
+		},
+		{
+			"case": "ui_and_multitouch",
+			"detail": "count=1 supply=25.0 rect=[P: (172.0, 1168.0), S: (112.0, 90.0)] viewport=(64, 64)",
+			"result": "PASS",
+			"test": "Touch summon dispatches InputMap exactly once"
+		},
+		{
+			"case": "ui_and_multitouch",
+			"detail": "move=190.0 cooldown=9.5 pressed=true",
+			"result": "PASS",
+			"test": "Multitouch movement plus skill"
+		},
+		{
+			"case": "ui_and_multitouch",
+			"detail": "",
+			"result": "PASS",
+			"test": "Touch release outside button clears movement"
+		},
+		{
+			"case": "ui_and_multitouch",
+			"detail": "",
+			"result": "PASS",
+			"test": "UI victory reward unlock save integration"
+		},
+		{
+			"case": "ui_and_multitouch",
+			"detail": "",
+			"result": "PASS",
+			"test": "Stage 2 can start after victory"
+		},
+		{
+			"case": "campaign_10_stages",
+			"detail": "result=victory duration=30.5s level=1 entities=10",
+			"result": "PASS",
+			"test": "Campaign stage 01"
+		},
+		{
+			"case": "campaign_10_stages",
+			"detail": "result=victory duration=32.5s level=1 entities=10",
+			"result": "PASS",
+			"test": "Campaign stage 02"
+		},
+		{
+			"case": "campaign_10_stages",
+			"detail": "result=victory duration=36.1s level=2 entities=11",
+			"result": "PASS",
+			"test": "Campaign stage 03"
+		},
+		{
+			"case": "campaign_10_stages",
+			"detail": "result=victory duration=36.2s level=2 entities=11",
+			"result": "PASS",
+			"test": "Campaign stage 04"
+		},
+		{
+			"case": "campaign_10_stages",
+			"detail": "result=victory duration=45.9s level=2 entities=12",
+			"result": "PASS",
+			"test": "Campaign stage 05"
+		},
+		{
+			"case": "campaign_10_stages",
+			"detail": "result=victory duration=40.5s level=2 entities=12",
+			"result": "PASS",
+			"test": "Campaign stage 06"
+		},
+		{
+			"case": "campaign_10_stages",
+			"detail": "result=victory duration=40.9s level=2 entities=12",
+			"result": "PASS",
+			"test": "Campaign stage 07"
+		},
+		{
+			"case": "campaign_10_stages",
+			"detail": "result=victory duration=43.3s level=2 entities=13",
+			"result": "PASS",
+			"test": "Campaign stage 08"
+		},
+		{
+			"case": "campaign_10_stages",
+			"detail": "result=victory duration=44.9s level=2 entities=13",
+			"result": "PASS",
+			"test": "Campaign stage 09"
+		},
+		{
+			"case": "campaign_10_stages",
+			"detail": "result=victory duration=137.4s level=5 entities=13",
+			"result": "PASS",
+			"test": "Campaign stage 10"
+		}
+	],
+	"engine": "4.6-stable (official)",
+	"failures": 0,
+	"test_cases": [
+		{
+			"automatic_physics": false,
+			"category": "Unit / Configuration",
+			"name": "catalog_and_input",
+			"real_save": false,
+			"real_scene": false
+		},
+		{
+			"automatic_physics": false,
+			"category": "Scene / Integration",
+			"name": "battle_core",
+			"real_save": false,
+			"real_scene": true
+		},
+		{
+			"automatic_physics": false,
+			"category": "Scene / Integration",
+			"name": "restart_and_hero_defeat",
+			"real_save": false,
+			"real_scene": true
+		},
+		{
+			"automatic_physics": false,
+			"category": "Scene / Integration",
+			"name": "friendly_base_defeat",
+			"real_save": false,
+			"real_scene": true
+		},
+		{
+			"automatic_physics": false,
+			"category": "Scene / Integration",
+			"name": "boss_phase_and_victory",
+			"real_save": false,
+			"real_scene": true
+		},
+		{
+			"automatic_physics": false,
+			"category": "Save Persistence",
+			"name": "save_progress_and_recovery",
+			"real_save": true,
+			"real_scene": false
+		},
+		{
+			"automatic_physics": false,
+			"category": "Integration",
+			"name": "stage_one_policy",
+			"real_save": false,
+			"real_scene": true
+		},
+		{
+			"automatic_physics": false,
+			"category": "Performance",
+			"name": "entity_99",
+			"real_save": false,
+			"real_scene": true
+		},
+		{
+			"automatic_physics": false,
+			"category": "Scene / Integration",
+			"name": "healer_support_siege_exp",
+			"real_save": false,
+			"real_scene": true
+		},
+		{
+			"automatic_physics": false,
+			"category": "Scene / Touch",
+			"name": "ui_and_multitouch",
+			"real_save": false,
+			"real_scene": true
+		},
+		{
+			"automatic_physics": false,
+			"category": "Integration / Save",
+			"name": "campaign_10_stages",
+			"real_save": false,
+			"real_scene": true
+		}
+	]
+}

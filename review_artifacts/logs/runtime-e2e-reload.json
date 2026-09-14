@@ -1,0 +1,31 @@
+{
+	"assertion_count": 4,
+	"assertions": [
+		{
+			"assertion": "Fresh process reads E2E save",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Fresh process restores actual stage victories",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "Fresh process restores earned hero and purchased unit levels",
+			"detail": "",
+			"result": "PASS"
+		},
+		{
+			"assertion": "All saved fields equal previous runtime process",
+			"detail": "{ \"save_version\": 1, \"gold\": 385, \"hero_level\": 2, \"hero_exp\": 30, \"unit_levels\": { \"cinder\": 2 }, \"owned_equipment\": [\"wickblade\", \"trail_ring\", \"sunspike\", \"spring_loop\"], \"equipped\": { \"weapon\": \"sunspike\", \"ring_a\": \"trail_ring\", \"ring_b\": \"\" }, \"unlocked_stage\": 3, \"cleared\": [1, 2], \"settings\": { \"master\": 0.8, \"music\": 0.32, \"sfx\": 0.7, \"mute\": false } }",
+			"result": "PASS"
+		}
+	],
+	"automatic_physics": true,
+	"case": "runtime-e2e-reload",
+	"failures": 0,
+	"real_main_scene": true,
+	"real_save_file": true,
+	"stages": []
+}

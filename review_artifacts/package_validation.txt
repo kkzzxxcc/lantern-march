@@ -1,0 +1,17 @@
+﻿PACKAGE SOURCE VALIDATION: PASS
+Date UTC: 20260910-054528
+Engine: Godot 4.6.stable.official.89cea1439
+Candidate ZIP opened and extracted successfully into a fresh folder without .godot cache.
+Commands executed against EXTRACTED copy:
+Godot --headless --path <unpacked> --editor --import --quit : exit 0
+Godot --headless --path <unpacked> --quit-after 120 : exit 0
+Configured Main Scene: res://scenes/boot/boot.tscn
+Script parse/import and Main Scene startup: PASS; missing resources: none observed.
+Raw outputs: package_import.log, package_boot.log.
+Known environment root certificate-store diagnostic is retained and explicitly excepted.
+Full gameplay 21 cases / 219 assertions were previously completed; not rerun or recounted for packaging.
+Final ZIP is rebuilt with these verification logs. The packaging script extracts it again and compares SHA256 of EVERY payload file to the staged source. Failure aborts delivery.
+The project source and assets in the final package are identical to the extracted project tested above; only audit evidence/document inventories are added after execution.
+Included: all project sources, original assets, data, tests, tools, documentation, review evidence and actual Web release.
+Excluded: .git, .godot, .tools, engine binaries/templates, private local saves and signing credentials.
+This report does not embed a hash of its own containing archive (self-reference). Final output prints the archive hash and verified file count.

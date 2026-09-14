@@ -1,0 +1,13 @@
+HISTORICAL BUILD OBSERVATIONS BELOW (port8061). Not final-release persistence proof.
+Manual CUA browser observation record; screenshots were inspected in the working conversation and are not bundled.
+Chrome, final release at http://127.0.0.1:8061/: PASS MainMenu -> Train Cinder (180 to 80 gold; level 1 to 2) -> browser reload -> Train still level 2 and 80 gold.
+PASS Camp -> Begin -> Stage 1; keyboard 1 summons and deducts supply, D movement, Escape pause overlay.
+PASS desktop viewport 1920x1080 and 2560x1440: canvas matches viewport, HP/resources, six summon and three skill buttons visible, pause overlay fits.
+Earlier in-app-browser 844x390 landscape layout inspected; not a physical-phone test and predates final audit fixes.
+Chrome console error/warning retrieval on final build returned an empty array.
+Audio resources load; audible listening NOT TESTED.
+Native mobile touch, iPhone Safari, notch safe area, PWA installation/offline, HTTPS hosting: NOT TESTED.
+Multitouch is separately tested by Godot InputEventScreenTouch injection into actual UI.
+
+LATEST RELEASE OBSERVATIONS / c7fa17a690861329 / port8062:
+Actual Chrome Stage1 victory; gold180→310; Stage2 unlocked; Cinder trained toLv2 and gold210; Sunspike equipped; music slider/mute changed. Refresh/reopen after these operations was interrupted: NOT VERIFIED. Final-release console warning/error retrieval before settings returned []. 1280x720,1366x768,1920x1080,2560x1440 and844x390 layouts inspected. No actual-phone claim.

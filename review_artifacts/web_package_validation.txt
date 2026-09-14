@@ -1,0 +1,6 @@
+﻿WEB ZIP PASS: 23 files; version c7fa17a690861329
+All entries use forward slash; all extracted SHA256 hashes match. All manifest release assets exist.
+LAUNCHER SERVER CHECK PASS (browser-open step intentionally skipped in automated probe)
+Browser auto-open is Start-Process default URL; automated launcher probe verifies server, not desktop browser selection.
+SHA256: A1845FE3A395F4BD08CCD85F9916E703E7E4BB42FB48A977F90BE7D7CCDC5550
+Path: C:\Users\user\Documents\ChatGPT\Paladog\lantern_march_web_release.zip

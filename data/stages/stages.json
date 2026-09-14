@@ -1,0 +1,487 @@
+[
+  {
+    "id": 1,
+    "name": "The Quiet Verge",
+    "mode": "normal",
+    "length": 2100,
+    "enemy_base_hp": 600,
+    "player_base_hp": 1100,
+    "defend_base": true,
+    "spawn_interval": 7,
+    "spawn_start": 4,
+    "boss": "",
+    "boss_time": 28,
+    "reward": {
+      "gold": 130,
+      "exp": 45,
+      "equipment": "sunspike"
+    },
+    "spawns": [
+      {
+        "id": "husk",
+        "weight": 5,
+        "start": 0
+      },
+      {
+        "id": "skitter",
+        "weight": 2,
+        "start": 14
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Reed Crossing",
+    "mode": "normal",
+    "length": 2180,
+    "enemy_base_hp": 730,
+    "player_base_hp": 1140,
+    "defend_base": true,
+    "spawn_interval": 6.65,
+    "spawn_start": 4,
+    "boss": "",
+    "boss_time": 28,
+    "reward": {
+      "gold": 175,
+      "exp": 65,
+      "equipment": "spring_loop"
+    },
+    "spawns": [
+      {
+        "id": "husk",
+        "weight": 5,
+        "start": 0
+      },
+      {
+        "id": "skitter",
+        "weight": 2,
+        "start": 14
+      },
+      {
+        "id": "slinger",
+        "weight": 2,
+        "start": 12
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Copper Orchard",
+    "mode": "normal",
+    "length": 2260,
+    "enemy_base_hp": 860,
+    "player_base_hp": 1180,
+    "defend_base": true,
+    "spawn_interval": 6.3,
+    "spawn_start": 4,
+    "boss": "",
+    "boss_time": 28,
+    "reward": {
+      "gold": 220,
+      "exp": 85,
+      "equipment": "iron_oath"
+    },
+    "spawns": [
+      {
+        "id": "husk",
+        "weight": 5,
+        "start": 0
+      },
+      {
+        "id": "skitter",
+        "weight": 2,
+        "start": 14
+      },
+      {
+        "id": "slinger",
+        "weight": 2,
+        "start": 12
+      },
+      {
+        "id": "bulwark",
+        "weight": 2,
+        "start": 22
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "A Road of Embers",
+    "mode": "normal",
+    "length": 2340,
+    "enemy_base_hp": 990,
+    "player_base_hp": 1220,
+    "defend_base": true,
+    "spawn_interval": 5.95,
+    "spawn_start": 4,
+    "boss": "",
+    "boss_time": 28,
+    "reward": {
+      "gold": 265,
+      "exp": 105,
+      "equipment": "river_knot"
+    },
+    "spawns": [
+      {
+        "id": "husk",
+        "weight": 5,
+        "start": 0
+      },
+      {
+        "id": "skitter",
+        "weight": 2,
+        "start": 14
+      },
+      {
+        "id": "slinger",
+        "weight": 2,
+        "start": 12
+      },
+      {
+        "id": "bulwark",
+        "weight": 2,
+        "start": 22
+      },
+      {
+        "id": "wisp",
+        "weight": 2,
+        "start": 16
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Heart of the Kiln",
+    "mode": "boss",
+    "length": 2420,
+    "enemy_base_hp": 1120,
+    "player_base_hp": 1260,
+    "defend_base": true,
+    "spawn_interval": 5.6,
+    "spawn_start": 4,
+    "boss": "kiln",
+    "boss_time": 28,
+    "reward": {
+      "gold": 310,
+      "exp": 125,
+      "equipment": "glass_staff"
+    },
+    "spawns": [
+      {
+        "id": "husk",
+        "weight": 5,
+        "start": 0
+      },
+      {
+        "id": "skitter",
+        "weight": 2,
+        "start": 14
+      },
+      {
+        "id": "slinger",
+        "weight": 2,
+        "start": 12
+      },
+      {
+        "id": "bulwark",
+        "weight": 2,
+        "start": 22
+      },
+      {
+        "id": "wisp",
+        "weight": 2,
+        "start": 16
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "The Pale Causeway",
+    "mode": "normal",
+    "length": 2500,
+    "enemy_base_hp": 1250,
+    "player_base_hp": 1300,
+    "defend_base": true,
+    "spawn_interval": 5.25,
+    "spawn_start": 4,
+    "boss": "",
+    "boss_time": 28,
+    "reward": {
+      "gold": 355,
+      "exp": 145,
+      "equipment": "harvest_band"
+    },
+    "spawns": [
+      {
+        "id": "husk",
+        "weight": 5,
+        "start": 0
+      },
+      {
+        "id": "skitter",
+        "weight": 2,
+        "start": 14
+      },
+      {
+        "id": "slinger",
+        "weight": 2,
+        "start": 12
+      },
+      {
+        "id": "bulwark",
+        "weight": 2,
+        "start": 22
+      },
+      {
+        "id": "wisp",
+        "weight": 2,
+        "start": 16
+      },
+      {
+        "id": "bell",
+        "weight": 2,
+        "start": 25
+      },
+      {
+        "id": "cantor",
+        "weight": 1,
+        "start": 30
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Bells in the Mist",
+    "mode": "normal",
+    "length": 2580,
+    "enemy_base_hp": 1380,
+    "player_base_hp": 1340,
+    "defend_base": true,
+    "spawn_interval": 4.9,
+    "spawn_start": 4,
+    "boss": "",
+    "boss_time": 28,
+    "reward": {
+      "gold": 400,
+      "exp": 165,
+      "equipment": "daybreak"
+    },
+    "spawns": [
+      {
+        "id": "husk",
+        "weight": 5,
+        "start": 0
+      },
+      {
+        "id": "skitter",
+        "weight": 2,
+        "start": 14
+      },
+      {
+        "id": "slinger",
+        "weight": 2,
+        "start": 12
+      },
+      {
+        "id": "bulwark",
+        "weight": 2,
+        "start": 22
+      },
+      {
+        "id": "wisp",
+        "weight": 2,
+        "start": 16
+      },
+      {
+        "id": "bell",
+        "weight": 2,
+        "start": 25
+      },
+      {
+        "id": "cantor",
+        "weight": 1,
+        "start": 30
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "The Broken Watch",
+    "mode": "normal",
+    "length": 2660,
+    "enemy_base_hp": 1510,
+    "player_base_hp": 1380,
+    "defend_base": true,
+    "spawn_interval": 4.550000000000001,
+    "spawn_start": 4,
+    "boss": "",
+    "boss_time": 28,
+    "reward": {
+      "gold": 445,
+      "exp": 185,
+      "equipment": "halo"
+    },
+    "spawns": [
+      {
+        "id": "husk",
+        "weight": 5,
+        "start": 0
+      },
+      {
+        "id": "skitter",
+        "weight": 2,
+        "start": 14
+      },
+      {
+        "id": "slinger",
+        "weight": 2,
+        "start": 12
+      },
+      {
+        "id": "bulwark",
+        "weight": 2,
+        "start": 22
+      },
+      {
+        "id": "wisp",
+        "weight": 2,
+        "start": 16
+      },
+      {
+        "id": "bell",
+        "weight": 2,
+        "start": 25
+      },
+      {
+        "id": "cantor",
+        "weight": 1,
+        "start": 30
+      },
+      {
+        "id": "warden",
+        "weight": 1,
+        "start": 35
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "The Last Lantern",
+    "mode": "normal",
+    "length": 2740,
+    "enemy_base_hp": 1640,
+    "player_base_hp": 1420,
+    "defend_base": true,
+    "spawn_interval": 4.2,
+    "spawn_start": 4,
+    "boss": "",
+    "boss_time": 28,
+    "reward": {
+      "gold": 490,
+      "exp": 205,
+      "equipment": ""
+    },
+    "spawns": [
+      {
+        "id": "husk",
+        "weight": 5,
+        "start": 0
+      },
+      {
+        "id": "skitter",
+        "weight": 2,
+        "start": 14
+      },
+      {
+        "id": "slinger",
+        "weight": 2,
+        "start": 12
+      },
+      {
+        "id": "bulwark",
+        "weight": 2,
+        "start": 22
+      },
+      {
+        "id": "wisp",
+        "weight": 2,
+        "start": 16
+      },
+      {
+        "id": "bell",
+        "weight": 2,
+        "start": 25
+      },
+      {
+        "id": "cantor",
+        "weight": 1,
+        "start": 30
+      },
+      {
+        "id": "warden",
+        "weight": 1,
+        "start": 35
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Crown of the Hollow",
+    "mode": "boss",
+    "length": 2820,
+    "enemy_base_hp": 1770,
+    "player_base_hp": 1460,
+    "defend_base": true,
+    "spawn_interval": 3.85,
+    "spawn_start": 4,
+    "boss": "eclipse",
+    "boss_time": 28,
+    "reward": {
+      "gold": 535,
+      "exp": 225,
+      "equipment": ""
+    },
+    "spawns": [
+      {
+        "id": "husk",
+        "weight": 5,
+        "start": 0
+      },
+      {
+        "id": "skitter",
+        "weight": 2,
+        "start": 14
+      },
+      {
+        "id": "slinger",
+        "weight": 2,
+        "start": 12
+      },
+      {
+        "id": "bulwark",
+        "weight": 2,
+        "start": 22
+      },
+      {
+        "id": "wisp",
+        "weight": 2,
+        "start": 16
+      },
+      {
+        "id": "bell",
+        "weight": 2,
+        "start": 25
+      },
+      {
+        "id": "cantor",
+        "weight": 1,
+        "start": 30
+      },
+      {
+        "id": "warden",
+        "weight": 1,
+        "start": 35
+      }
+    ]
+  }
+]

@@ -1,0 +1,89 @@
+Godot Engine v4.6.stable.official.89cea1439 - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2570)
+PASS Data schema and enemy references []
+PASS MVP data counts 6 allies, 8 enemies + 2 bosses, 10 stages, 10 equipment, 3 skills
+PASS InputMap move_left 
+PASS InputMap move_right 
+PASS InputMap summon_unit_1 
+PASS InputMap summon_unit_2 
+PASS InputMap summon_unit_3 
+PASS InputMap summon_unit_4 
+PASS InputMap summon_unit_5 
+PASS InputMap summon_unit_6 
+PASS InputMap skill_1 
+PASS InputMap skill_2 
+PASS InputMap skill_3 
+PASS InputMap pause 
+PASS InputMap debug_toggle 
+PASS Battle scene construction 
+PASS Hero movement via InputMap 
+PASS Hero reverse movement 
+PASS Supply and mana recovery 
+PASS Unit summon 
+PASS Supply debit 
+PASS Spawn cooldown rejects duplicate 
+PASS Aura apply attack modifier 
+PASS Aura speed and defense modifiers 
+PASS Aura removes without stat drift 
+PASS CombatCalculator subtraction 
+PASS Minimum damage is one 
+PASS Hero projectile skill 
+PASS Projectile damages and kills target 
+PASS Dead entity immediately removed from registry 
+PASS Area skill hits multiple enemies 
+PASS Heal skill restores hero 
+PASS Timed enemy spawning 
+PASS Pause freezes combat and resources 
+PASS Enemy gate death triggers victory 
+PASS Battle restart resets transient state 
+PASS Hero death triggers defeat 
+PASS Friendly gate defeat rule 
+PASS Boss scheduled spawn 
+PASS Boss phase transition 
+PASS Boss death victory condition 
+PASS Victory reward, equipment drop and stage unlock 
+PASS Permanent unit upgrade purchase 
+PASS Equipment stats and ownership 
+PASS Equipment slot type rejection 
+PASS Unowned equipment rejected 
+PASS Save write 
+PASS Save reload restores progress 
+PASS Corrupt save backup recovery 
+PASS Save version 0 migration 
+PASS Future save is not overwritten 
+PASS Natural Stage 1 full combat loop result=victory time=31.4s skills=4 blessings=0 wall=106ms (normal costs, no damage cheats)
+PASS Entity stress construction 99 entities including 48 friendly + 48 enemy
+PASS Entity stress bounded simulation 600 ticks 233.00ms, 0.388ms per tick (headless CPU; not mobile FPS)
+PASS Healer selects wounded friendly target 
+PASS Healer unit restores health 
+PASS Support targets allied enemy faction 
+PASS Support unit applies timed buff 
+PASS Support buff expires without drift 
+PASS Siege double base damage through projectile 
+PASS Battle EXP preserves simultaneous kills while choosing 
+PASS Selected battle blessing applies 
+PASS Boot opens MainMenu 
+PASS Menu button accepts touch 
+PASS Scene route stage_select 
+PASS Scene route upgrade 
+PASS Scene route equipment 
+PASS Scene route settings 
+PASS Battle HUD six summons and three skills 
+PASS Touch summon dispatches InputMap exactly once count=1 supply=25.0 rect=[P: (172.0, 1168.0), S: (112.0, 90.0)] viewport=(64, 64)
+PASS Multitouch movement plus skill move=190.0 cooldown=9.5 pressed=true
+PASS Touch release outside button clears movement 
+PASS UI victory reward unlock save integration 
+PASS Stage 2 can start after victory 
+PASS Campaign stage 01 result=victory duration=30.5s level=1 entities=10
+PASS Campaign stage 02 result=victory duration=32.5s level=1 entities=10
+PASS Campaign stage 03 result=victory duration=36.1s level=2 entities=11
+PASS Campaign stage 04 result=victory duration=36.2s level=2 entities=11
+PASS Campaign stage 05 result=victory duration=45.9s level=2 entities=12
+PASS Campaign stage 06 result=victory duration=40.5s level=2 entities=12
+PASS Campaign stage 07 result=victory duration=40.9s level=2 entities=12
+PASS Campaign stage 08 result=victory duration=43.3s level=2 entities=13
+PASS Campaign stage 09 result=victory duration=44.9s level=2 entities=13
+PASS Campaign stage 10 result=victory duration=137.4s level=5 entities=13
+TESTS COMPLETE: 84 checks, 0 failures

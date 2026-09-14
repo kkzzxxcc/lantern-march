@@ -1,0 +1,5 @@
+Godot Engine v4.6.stable.official.89cea1439 - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2570)
+FRESH PROCESS LOAD PASS state={"cleared":[1],"equipped":{"ring_a":"trail_ring","ring_b":"","weapon":"sunspike"},"gold":210,"hero_exp":45,"hero_level":1,"owned_equipment":["wickblade","trail_ring","sunspike"],"save_version":1,"settings":{"master":0.8,"music":0.32,"mute":false,"sfx":0.7},"unit_levels":{"cinder":2},"unlocked_stage":2}

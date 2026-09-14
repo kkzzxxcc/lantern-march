@@ -1,0 +1,31 @@
+[
+  {
+    "active_projectiles": 0,
+    "entities_end": 43,
+    "entities_initial": 50,
+    "fps": "NOT MEASURED: headless synchronous CPU sample",
+    "memory_after": 24019820,
+    "memory_before": 24003270,
+    "projectile_slots": 64,
+    "target_queries": 1000,
+    "target_query_total_us": 16630,
+    "tick_median_us": 196,
+    "tick_p95_us": 636,
+    "ticks": 300
+  },
+  {
+    "active_projectiles": 0,
+    "entities_end": 95,
+    "entities_initial": 100,
+    "fps": "NOT MEASURED: headless synchronous CPU sample",
+    "memory_after": 24545946,
+    "memory_before": 24531780,
+    "projectile_slots": 64,
+    "target_queries": 2000,
+    "target_query_total_us": 56298,
+    "tick_median_us": 251,
+    "tick_p95_us": 1460,
+    "ticks": 300
+  }
+]
+Headless CPU sample only. GPU/render FPS, mobile thermal behavior, long-session memory plateau and signal-count trend: NOT TESTED. Normal gameplay cap is 99 including hero/bases; 100-entity fixture deliberately calls _spawn.
