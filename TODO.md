@@ -1,5 +1,7 @@
 # NOW
 
+- 2026-09-16: PWA release hashing, registration-scoped cache cleanup and active-release navigation fixed; Node regression tests 6/6 passed. Actual Web re-export and browser lifecycle QA remain pending. Evidence: review_artifacts/web_pwa_2026-09-16.md.
+
 - No known blocking Web gameplay bug remains in the tested scope. Investigate any new report with a reproduction before adding content.
 
 # NEXT

@@ -33,6 +33,10 @@ powershell -ExecutionPolicy Bypass -File tools/export-web.ps1 -Godot "C:\path\Go
 
 테스트는 프로젝트 .tools/userdata 아래 독립 APPDATA를 사용하고 artifacts에 결과를 쓴다. Web 재빌드는 Node.js와 네트워크가 필요하며 공식 release에서 threadless export template만 .tools/templates로 받는다. 원본 JSON이 권위 데이터다. CI/다른 OS에서는 같은 Godot --headless --path . --script res://tests/... 명령을 순서대로 실행할 수 있다. export template은 엔진과 정확히4.6 버전을 맞춘다.
 
+## Web 배포 도구 회귀검증
+
+`node --test tools/web-release.test.mjs` (Node.js 20+). 합성 export와 Node VM으로 릴리스 해시·경로별 캐시 정리·업데이트 중 화면 유지·설치 실패를 검증합니다. 실제 브라우저 설치/오프라인/IndexedDB 저장 검증은 아닙니다. 최신 결과: `review_artifacts/web_pwa_2026-09-16.md`.
+
 ## 검수 핵심
 
 - PROJECT_AUDIT.md: 상세 요구사항/코드경로/한계/실제 케이스 구분.

@@ -1,3 +1,9 @@
+# Current continuation — 2026-09-16
+
+Canonical Git remote is now origin https://github.com/kkzzxxcc/lantern-march.git; original nyamNyamm2 remote is upstream. Earlier no-remote/build-included statements below describe the Windows migration ZIP, not this Git checkout.
+
+PWA finalizer now hashes all fresh index assets plus HTML/manifest and worker-policy version, namespaces caches by registration scope, and serves the active release shell during updates. Legacy unscoped caches are preserved to avoid deleting another deployment's cache. Run `node --test tools/web-release.test.mjs`: 6/6 Node fixture/VM tests passed, not browser or gameplay tests. No new Web export or public URL. See review_artifacts/web_pwa_2026-09-16.md. Browser QA remains first priority; no native work.
+
 # Project Goal
 
 Continue Lantern March / 등불의 전선, a playable original lane-battle game. Do not recreate the project. This repository is sufficient; no Codex conversation or private tool cache is required.
