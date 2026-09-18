@@ -1,3 +1,7 @@
+# Current continuation — HTTPS preparation
+
+2026-09-18: Public HTTPS deployment preparation completed for release 0d67ff167e3ab7dd. GitHub Pages upload ZIP verified against prior fingerprints (16/16), archive/extracted payload checked (19/19). Local ZIP only; no deployment or browser execution. See WEB_DEPLOYMENT.md and review_artifacts/web_https_preparation_2026-09-18.md. Next executable work under current browser restriction is HTTPS deployment; refresh/restart persistence remains unverified.
+
 # Current continuation — 2026-09-18
 
 Web re-export completed: local build/web release 0d67ff167e3ab7dd from a2d93b8, Godot 4.6 stable single-thread release. Existing PWA regressions 6/6 and generated-output HTTP/byte checks 16/16 passed. No browser/gameplay test or public deployment. Build output is Git-ignored and exists only in this checkout; see review_artifacts/web_export_2026-09-18.md for commands and fingerprints. NEXT remains browser refresh/reopen persistence QA on this new release; browser access is prohibited by current channel policy. Core architecture unchanged; no native work.

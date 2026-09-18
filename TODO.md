@@ -1,5 +1,7 @@
 # NOW
 
+- 2026-09-18: Public HTTPS deployment preparation completed for release 0d67ff167e3ab7dd. GitHub Pages upload ZIP verified against prior fingerprints (16/16), archive/extracted payload checked (19/19). Local ZIP only; no deployment or browser execution. See WEB_DEPLOYMENT.md and review_artifacts/web_https_preparation_2026-09-18.md. Next executable work under current browser restriction is HTTPS deployment; refresh/restart persistence remains unverified.
+
 - 2026-09-18: Web re-export completed from a2d93b8 with Godot 4.6 stable; local release 0d67ff167e3ab7dd. PWA regressions 6/6 and actual-output HTTP/byte checks 16/16 passed. No browser QA or deployment. Evidence: review_artifacts/web_export_2026-09-18.md.
 
 - 2026-09-16: PWA release hashing, registration-scoped cache cleanup and active-release navigation fixed; Node regression tests 6/6 passed. Web re-export completed 2026-09-18 (see 2026-09-18 entry); browser lifecycle QA remains pending. Evidence: review_artifacts/web_pwa_2026-09-16.md.
