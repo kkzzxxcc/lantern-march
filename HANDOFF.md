@@ -1,3 +1,7 @@
+# Current continuation — 2026-09-18
+
+Web re-export completed: local build/web release 0d67ff167e3ab7dd from a2d93b8, Godot 4.6 stable single-thread release. Existing PWA regressions 6/6 and generated-output HTTP/byte checks 16/16 passed. No browser/gameplay test or public deployment. Build output is Git-ignored and exists only in this checkout; see review_artifacts/web_export_2026-09-18.md for commands and fingerprints. NEXT remains browser refresh/reopen persistence QA on this new release; browser access is prohibited by current channel policy. Core architecture unchanged; no native work.
+
 # Current continuation — 2026-09-16
 
 Canonical Git remote is now origin https://github.com/kkzzxxcc/lantern-march.git; original nyamNyamm2 remote is upstream. Earlier no-remote/build-included statements below describe the Windows migration ZIP, not this Git checkout.
