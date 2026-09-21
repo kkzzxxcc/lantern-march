@@ -1,6 +1,18 @@
 # Public HTTPS deployment preparation
 
-## Status — 2026-09-18
+## Live deployment — 2026-09-21
+
+- Public URL: https://kkzzxxcc.github.io/lantern-march/
+- Release: `0d67ff167e3ab7dd`; the exact prepared ZIP was deployed without rebuilding.
+- GitHub Pages: `gh-pages` root, HTTPS enforced, build status `built`.
+- Deployment commit: `4625ddc0d80193ae9aa6a5378a4735799c91d7fb`.
+- Direct public HTTPS verification: 19/19 files returned 200 at the intended URL and matched tracked SHA256 checksums. WASM/JavaScript/manifest MIME checks passed. Static HTML/manifest/worker mixed-content scan passed.
+- Evidence: `review_artifacts/web_https_2026-09-21.json`.
+- No browser execution: gameplay startup, refresh/restart persistence and PWA lifecycle remain unverified. No Android/iOS work.
+- Pages auto-enabled after the initial branch push; subsequent create request returned 409 already enabled. GET confirmed the intended branch/root and enforced HTTPS. No custom workflow or paid service was needed.
+- Future deployments: update the existing `gh-pages` branch without rewriting history; retain prior hashed assets and publish a complete verified release. The preparation section below is historical, not the current deployment status.
+
+## Historical preparation — 2026-09-18
 
 Prepared, **not deployed**. Browser execution is prohibited by the current channel policy; no browser was opened and no persistence result is claimed.
 

@@ -1,5 +1,7 @@
 # NOW
 
+- 2026-09-21: Public HTTPS deployment completed for release `0d67ff167e3ab7dd`: https://kkzzxxcc.github.io/lantern-march/ . Pages `gh-pages` root, HTTPS enforced, build `built`; deployment commit `4625ddc`. Public HTTP/checksum verification passed 19/19 with required MIME types; evidence: review_artifacts/web_https_2026-09-21.json. No browser execution or native work. NEXT: browser refresh/restart persistence and PWA/device QA.
+
 - 2026-09-18: Public HTTPS deployment preparation completed for release 0d67ff167e3ab7dd. GitHub Pages upload ZIP verified against prior fingerprints (16/16), archive/extracted payload checked (19/19). Local ZIP only; no deployment or browser execution. See WEB_DEPLOYMENT.md and review_artifacts/web_https_preparation_2026-09-18.md. Next executable work under current browser restriction is HTTPS deployment; refresh/restart persistence remains unverified.
 
 - 2026-09-18: Web re-export completed from a2d93b8 with Godot 4.6 stable; local release 0d67ff167e3ab7dd. PWA regressions 6/6 and actual-output HTTP/byte checks 16/16 passed. No browser QA or deployment. Evidence: review_artifacts/web_export_2026-09-18.md.

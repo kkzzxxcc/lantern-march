@@ -1,0 +1,140 @@
+{
+  "url": "https://kkzzxxcc.github.io/lantern-march/",
+  "release": "0d67ff167e3ab7dd",
+  "checks": [
+    {
+      "file": ".nojekyll",
+      "status": 200,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mime": "application/octet-stream"
+    },
+    {
+      "file": "GODOT_COPYRIGHT.txt",
+      "status": 200,
+      "sha256": "770b334b09db9d4b32f13a901f9c091695a252e73c35681d819a1190c313e9bc",
+      "bytes": 99790,
+      "mime": "text/plain"
+    },
+    {
+      "file": "THIRD_PARTY_NOTICES.md",
+      "status": 200,
+      "sha256": "30af8c79edd6ad119ba6bd5c7aed74d14e01e7c016c5686856c216825fe33821",
+      "bytes": 537,
+      "mime": "text/markdown"
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "sha256": "70346c9c242001470691d9477c88eb84d7a7545341c5e9bfc027935e0b79bbc5",
+      "bytes": 6113,
+      "mime": "text/html"
+    },
+    {
+      "file": "lm-0d67ff167e3ab7dd.144x144.png",
+      "status": 200,
+      "sha256": "6272a95241f36ac8b7f6d418dea32f9ba1b8ced458ce0241e6dde220a6854264",
+      "bytes": 4180,
+      "mime": "image/png"
+    },
+    {
+      "file": "lm-0d67ff167e3ab7dd.180x180.png",
+      "status": 200,
+      "sha256": "a48ba1faabe8ff23173184a758300fc7e723681f29d8a02d63e34c714bc585b1",
+      "bytes": 6031,
+      "mime": "image/png"
+    },
+    {
+      "file": "lm-0d67ff167e3ab7dd.512x512.png",
+      "status": 200,
+      "sha256": "3ed77b53c381b1ce708424c211551e2393abaa5e13477758d20189b2be542589",
+      "bytes": 21716,
+      "mime": "image/png"
+    },
+    {
+      "file": "lm-0d67ff167e3ab7dd.apple-touch-icon.png",
+      "status": 200,
+      "sha256": "a48ba1faabe8ff23173184a758300fc7e723681f29d8a02d63e34c714bc585b1",
+      "bytes": 6031,
+      "mime": "image/png"
+    },
+    {
+      "file": "lm-0d67ff167e3ab7dd.audio.position.worklet.js",
+      "status": 200,
+      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
+      "bytes": 2973,
+      "mime": "application/javascript"
+    },
+    {
+      "file": "lm-0d67ff167e3ab7dd.audio.worklet.js",
+      "status": 200,
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
+      "bytes": 7298,
+      "mime": "application/javascript"
+    },
+    {
+      "file": "lm-0d67ff167e3ab7dd.icon.png",
+      "status": 200,
+      "sha256": "3ed77b53c381b1ce708424c211551e2393abaa5e13477758d20189b2be542589",
+      "bytes": 21716,
+      "mime": "image/png"
+    },
+    {
+      "file": "lm-0d67ff167e3ab7dd.js",
+      "status": 200,
+      "sha256": "e3f56ee40e6f84371053db06692cfac15e2c8659547b11c6b2dfa1996dabd981",
+      "bytes": 315759,
+      "mime": "application/javascript"
+    },
+    {
+      "file": "lm-0d67ff167e3ab7dd.offline.html",
+      "status": 200,
+      "sha256": "b0a5d443e78f58717adac780bac91c1431bfa3b801c41f4707d507fb5ad2e47f",
+      "bytes": 971,
+      "mime": "text/html"
+    },
+    {
+      "file": "lm-0d67ff167e3ab7dd.pck",
+      "status": 200,
+      "sha256": "f0d8d9986b42b0142b7e2d9e23269295d6ac70fd97634ef7c7446920c5e94ebc",
+      "bytes": 296312,
+      "mime": "application/octet-stream"
+    },
+    {
+      "file": "lm-0d67ff167e3ab7dd.png",
+      "status": 200,
+      "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e",
+      "bytes": 21443,
+      "mime": "image/png"
+    },
+    {
+      "file": "lm-0d67ff167e3ab7dd.wasm",
+      "status": 200,
+      "sha256": "2b558bdb3c3af1f822ce6c43e09e1fa844d82fa440fe40d2d25d6c36ddf95137",
+      "bytes": 37686550,
+      "mime": "application/wasm"
+    },
+    {
+      "file": "manifest.webmanifest",
+      "status": 200,
+      "sha256": "c8aae38d63a9bb04e2e535da0938ba53f2170127d901168328f2a3bc080cefae",
+      "bytes": 598,
+      "mime": "application/manifest+json"
+    },
+    {
+      "file": "release.json",
+      "status": 200,
+      "sha256": "304273350bf548a27e6a11c999cdda7266c2ee52a677e54819b2129d9080dec9",
+      "bytes": 630,
+      "mime": "application/json"
+    },
+    {
+      "file": "service-worker.js",
+      "status": 200,
+      "sha256": "85ae87de37d6bea840f0176bdbb656306e49f1344f14ecbd2fe7dff6604e3ff9",
+      "bytes": 1586,
+      "mime": "application/javascript"
+    }
+  ],
+  "browser_executed": false
+}
