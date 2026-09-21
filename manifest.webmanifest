@@ -1,0 +1,28 @@
+{
+  "background_color": "#0d252e",
+  "display": "standalone",
+  "icons": [
+    {
+      "sizes": "144x144",
+      "src": "lm-0d67ff167e3ab7dd.144x144.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "180x180",
+      "src": "lm-0d67ff167e3ab7dd.180x180.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "512x512",
+      "src": "lm-0d67ff167e3ab7dd.512x512.png",
+      "type": "image/png"
+    }
+  ],
+  "name": "Lantern March",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "id": "./",
+  "scope": "./",
+  "short_name": "Lantern March",
+  "theme_color": "#0d252e"
+}

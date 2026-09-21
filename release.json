@@ -1,0 +1,22 @@
+{
+  "version": "0d67ff167e3ab7dd",
+  "engine": "4.6-stable",
+  "build": "release",
+  "threaded": false,
+  "assets": [
+    "index.html",
+    "manifest.webmanifest",
+    "lm-0d67ff167e3ab7dd.144x144.png",
+    "lm-0d67ff167e3ab7dd.180x180.png",
+    "lm-0d67ff167e3ab7dd.512x512.png",
+    "lm-0d67ff167e3ab7dd.apple-touch-icon.png",
+    "lm-0d67ff167e3ab7dd.audio.position.worklet.js",
+    "lm-0d67ff167e3ab7dd.audio.worklet.js",
+    "lm-0d67ff167e3ab7dd.icon.png",
+    "lm-0d67ff167e3ab7dd.js",
+    "lm-0d67ff167e3ab7dd.offline.html",
+    "lm-0d67ff167e3ab7dd.pck",
+    "lm-0d67ff167e3ab7dd.png",
+    "lm-0d67ff167e3ab7dd.wasm"
+  ]
+}
