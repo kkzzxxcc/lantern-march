@@ -1,8 +1,8 @@
 // Atomic install; no skipWaiting: active sessions keep their release cache.
 // CacheStorage is origin-wide, so only clean caches owned by this registration.
 const CACHE_PREFIX='lantern-march-v2:'+encodeURIComponent(self.registration.scope)+':';
-const CACHE=CACHE_PREFIX+'0d67ff167e3ab7dd';
-const ASSETS=["index.html","manifest.webmanifest","lm-0d67ff167e3ab7dd.144x144.png","lm-0d67ff167e3ab7dd.180x180.png","lm-0d67ff167e3ab7dd.512x512.png","lm-0d67ff167e3ab7dd.apple-touch-icon.png","lm-0d67ff167e3ab7dd.audio.position.worklet.js","lm-0d67ff167e3ab7dd.audio.worklet.js","lm-0d67ff167e3ab7dd.icon.png","lm-0d67ff167e3ab7dd.js","lm-0d67ff167e3ab7dd.offline.html","lm-0d67ff167e3ab7dd.pck","lm-0d67ff167e3ab7dd.png","lm-0d67ff167e3ab7dd.wasm"];
+const CACHE=CACHE_PREFIX+'5c1f6b23b9fdfbdc';
+const ASSETS=["index.html","manifest.webmanifest","lm-5c1f6b23b9fdfbdc.144x144.png","lm-5c1f6b23b9fdfbdc.180x180.png","lm-5c1f6b23b9fdfbdc.512x512.png","lm-5c1f6b23b9fdfbdc.apple-touch-icon.png","lm-5c1f6b23b9fdfbdc.audio.position.worklet.js","lm-5c1f6b23b9fdfbdc.audio.worklet.js","lm-5c1f6b23b9fdfbdc.icon.png","lm-5c1f6b23b9fdfbdc.js","lm-5c1f6b23b9fdfbdc.offline.html","lm-5c1f6b23b9fdfbdc.pck","lm-5c1f6b23b9fdfbdc.png","lm-5c1f6b23b9fdfbdc.wasm"];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS))));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith(CACHE_PREFIX)&&k!==CACHE).map(k=>caches.delete(k))))));
 self.addEventListener('fetch',e=>{

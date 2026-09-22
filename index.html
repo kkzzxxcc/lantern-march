@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, viewport-fit=cover">
-		<title>Lantern March</title>
+		<title>등불의 전선</title>
 		<style>
 html, body, #canvas {
 	margin: 0;
@@ -90,30 +90,30 @@ body {
 	z-index: 1;
 }
 		</style>
-		<link id="-gd-engine-icon" rel="icon" type="image/png" href="lm-0d67ff167e3ab7dd.icon.png" />
-<link rel="apple-touch-icon" href="lm-0d67ff167e3ab7dd.apple-touch-icon.png"/>
+		<link id="-gd-engine-icon" rel="icon" type="image/png" href="lm-5c1f6b23b9fdfbdc.icon.png" />
+<link rel="apple-touch-icon" href="lm-5c1f6b23b9fdfbdc.apple-touch-icon.png"/>
 <link rel="manifest" href="manifest.webmanifest">
 <style>:root{--safe-left:env(safe-area-inset-left,0px);--safe-right:env(safe-area-inset-right,0px);--safe-top:env(safe-area-inset-top,0px);--safe-bottom:env(safe-area-inset-bottom,0px)}body{background:#0d252e;touch-action:none}#canvas{touch-action:none}</style>
 	<meta name="theme-color" content="#0d252e">
 </head>
 	<body>
 		<canvas id="canvas">
-			Your browser does not support the canvas tag.
+			이 브라우저는 게임 화면을 지원하지 않습니다.
 		</canvas>
 
 		<noscript>
-			Your browser does not support JavaScript.
+			게임을 실행하려면 자바스크립트를 허용해 주세요.
 		</noscript>
 
 		<div id="status">
-			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="lm-0d67ff167e3ab7dd.png" alt="">
+			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="lm-5c1f6b23b9fdfbdc.png" alt="">
 			<progress id="status-progress"></progress>
 			<div id="status-notice"></div>
 		</div>
 
-		<script src="lm-0d67ff167e3ab7dd.js"></script>
+		<script src="lm-5c1f6b23b9fdfbdc.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"lm-0d67ff167e3ab7dd","experimentalVK":false,"fileSizes":{"lm-0d67ff167e3ab7dd.pck":296312,"lm-0d67ff167e3ab7dd.wasm":37686550},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"service-worker.js"};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"lm-5c1f6b23b9fdfbdc","experimentalVK":false,"fileSizes":{"lm-5c1f6b23b9fdfbdc.pck":12214512,"lm-5c1f6b23b9fdfbdc.wasm":37686550},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"service-worker.js"};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
@@ -154,11 +154,11 @@ const engine = new Engine(GODOT_CONFIG);
 	function displayFailureNotice(err) {
 		console.error(err);
 		if (err instanceof Error) {
-			setStatusNotice(err.message);
+			setStatusNotice('게임을 불러오지 못했습니다. 인터넷 연결과 브라우저 지원 여부를 확인한 뒤 다시 시도해 주세요.');
 		} else if (typeof err === 'string') {
-			setStatusNotice(err);
+			setStatusNotice('게임 실행에 필요한 브라우저 기능 또는 파일이 없습니다. 최신 브라우저에서 다시 시도해 주세요.');
 		} else {
-			setStatusNotice('An unknown error occurred.');
+			setStatusNotice('알 수 없는 오류가 발생했습니다.');
 		}
 		setStatusMode('notice');
 		initializing = false;
