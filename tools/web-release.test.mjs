@@ -56,6 +56,22 @@ test('all asset references exist and fresh export finalizes reproducibly',t=>{
  assert.notEqual(a.run().status,0,'reject already-finalized output');
  assert.equal(fs.readFileSync(path.join(a.root,'index.html'),'utf8'),before);
 });
+test('Korean shell, offline page and manifest are included in hashed release',t=>{
+ const f=build(t,{
+  'index.html':'<html lang="en"><head></head><body>Your browser does not support JavaScript.<script>setStatusNotice(err.message);</script></body></html>',
+  'index.offline.html':'<html lang="en"><title>You are offline</title><p>This application requires an Internet connection to run for the first time.</p><p>Press the button below to try reloading:</p><button>Reload</button></html>'
+ });
+ const html=fs.readFileSync(path.join(f.root,'index.html'),'utf8');
+ assert.ok(html.includes('lang="ko"'));
+ assert.ok(html.includes('자바스크립트'));
+ assert.ok(!html.includes('setStatusNotice(err.message)'));
+ const offline=fs.readFileSync(path.join(f.root,'lm-'+f.release.version+'.offline.html'),'utf8');
+ assert.ok(offline.includes('다시 불러오기'));
+ assert.ok(!offline.includes('You are offline'));
+ const manifest=JSON.parse(fs.readFileSync(path.join(f.root,'manifest.webmanifest'),'utf8'));
+ assert.equal(manifest.lang,'ko');
+ assert.equal(manifest.name,'등불의 전선');
+});
 test('HTML, manifest and icon-only changes each produce a new release',t=>{
  const baseline=build(t).release.version;
  for(const changes of [

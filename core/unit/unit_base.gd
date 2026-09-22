@@ -111,6 +111,7 @@ func attack(victim) -> void:
 func take_damage(power: float) -> void:
 	if not alive or invincible:
 		return
+	Audio.play("hit")
 	hp = maxf(0.0, hp - CombatCalculator.damage(power, stat("defense")))
 	flash = 0.12
 	if hp <= 0:
@@ -118,6 +119,8 @@ func take_damage(power: float) -> void:
 
 func heal(amount: float) -> void:
 	if alive:
+		if amount > 0.0 and hp < max_hp:
+			Audio.play("heal")
 		hp = minf(max_hp, hp + amount)
 		flash = 0.06
 

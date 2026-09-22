@@ -1,0 +1,119 @@
+{
+  "release": "5c1f6b23b9fdfbdc",
+  "http_checks": 16,
+  "scope": "local HTTP and export log, not browser execution",
+  "files": [
+    {
+      "file": "index.html",
+      "bytes": 6433,
+      "sha256": "2d7b7821de48eba5602391b3a238d7f8c83a7c37367b6b7a0f22d725ffe6b892",
+      "http": 200,
+      "mime": "text/html"
+    },
+    {
+      "file": "manifest.webmanifest",
+      "bytes": 620,
+      "sha256": "bbfbfef8f075ced7d3f12fcdab6f620419ebb9adf0690b1f9c70072eae806188",
+      "http": 200,
+      "mime": "application/manifest+json"
+    },
+    {
+      "file": "lm-5c1f6b23b9fdfbdc.144x144.png",
+      "bytes": 4180,
+      "sha256": "6272a95241f36ac8b7f6d418dea32f9ba1b8ced458ce0241e6dde220a6854264",
+      "http": 200,
+      "mime": "image/png"
+    },
+    {
+      "file": "lm-5c1f6b23b9fdfbdc.180x180.png",
+      "bytes": 6031,
+      "sha256": "a48ba1faabe8ff23173184a758300fc7e723681f29d8a02d63e34c714bc585b1",
+      "http": 200,
+      "mime": "image/png"
+    },
+    {
+      "file": "lm-5c1f6b23b9fdfbdc.512x512.png",
+      "bytes": 21716,
+      "sha256": "3ed77b53c381b1ce708424c211551e2393abaa5e13477758d20189b2be542589",
+      "http": 200,
+      "mime": "image/png"
+    },
+    {
+      "file": "lm-5c1f6b23b9fdfbdc.apple-touch-icon.png",
+      "bytes": 6031,
+      "sha256": "a48ba1faabe8ff23173184a758300fc7e723681f29d8a02d63e34c714bc585b1",
+      "http": 200,
+      "mime": "image/png"
+    },
+    {
+      "file": "lm-5c1f6b23b9fdfbdc.audio.position.worklet.js",
+      "bytes": 2973,
+      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
+      "http": 200,
+      "mime": "application/javascript"
+    },
+    {
+      "file": "lm-5c1f6b23b9fdfbdc.audio.worklet.js",
+      "bytes": 7298,
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
+      "http": 200,
+      "mime": "application/javascript"
+    },
+    {
+      "file": "lm-5c1f6b23b9fdfbdc.icon.png",
+      "bytes": 21716,
+      "sha256": "3ed77b53c381b1ce708424c211551e2393abaa5e13477758d20189b2be542589",
+      "http": 200,
+      "mime": "image/png"
+    },
+    {
+      "file": "lm-5c1f6b23b9fdfbdc.js",
+      "bytes": 315759,
+      "sha256": "e3f56ee40e6f84371053db06692cfac15e2c8659547b11c6b2dfa1996dabd981",
+      "http": 200,
+      "mime": "application/javascript"
+    },
+    {
+      "file": "lm-5c1f6b23b9fdfbdc.offline.html",
+      "bytes": 1051,
+      "sha256": "68440f9f7a27db99410573323e36dfccfd437c396bd9cbc6c6ac0842c67459e1",
+      "http": 200,
+      "mime": "text/html"
+    },
+    {
+      "file": "lm-5c1f6b23b9fdfbdc.pck",
+      "bytes": 12214512,
+      "sha256": "0006904c9221082becb801bc65858e834a5a97e143aa787c9ac09a2d854e974d",
+      "http": 200,
+      "mime": "application/octet-stream"
+    },
+    {
+      "file": "lm-5c1f6b23b9fdfbdc.png",
+      "bytes": 21443,
+      "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e",
+      "http": 200,
+      "mime": "image/png"
+    },
+    {
+      "file": "lm-5c1f6b23b9fdfbdc.wasm",
+      "bytes": 37686550,
+      "sha256": "2b558bdb3c3af1f822ce6c43e09e1fa844d82fa440fe40d2d25d6c36ddf95137",
+      "http": 200,
+      "mime": "application/wasm"
+    },
+    {
+      "file": "release.json",
+      "bytes": 630,
+      "sha256": "3a32bc1357f7d3e51610734ff0b98e50fece9b6ff1f1832b701e27da88839903",
+      "http": 200,
+      "mime": "application/json"
+    },
+    {
+      "file": "service-worker.js",
+      "bytes": 1586,
+      "sha256": "ed2d7cbf7b28b830123b12685831d15ef9702cecf814e74c789bff5bb89b0afb",
+      "http": 200,
+      "mime": "application/javascript"
+    }
+  ]
+}

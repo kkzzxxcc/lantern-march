@@ -1,5 +1,8 @@
 # Technical Decisions
 
+- 2026-09-22: Korean is the default; use built-in Godot gettext PO catalogs with English source strings and display-time translation, never translated internal IDs. Bundle OFL Noto Sans KR for Web Hangul. Directly synthesize original menu/battle themes and eight event SFX; keep original generation/provenance in the repository. Web audio uses STREAM playback for bus settings, starts on user interaction, and switches BGM by scene. No new dependency or save-schema change.
+
+
 - Godot4.6 stable + GDScript, Compatibility renderer: one shared codebase, WebGL2 deployment, future native exports.
 - Web first; Android/iOS native deferred deliberately. Do not install native SDKs for this milestone.
 - Single-thread Web; no COOP/COEP requirement, no server/backend accounts.

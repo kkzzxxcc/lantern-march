@@ -18,6 +18,7 @@ func _clear() -> void:
 
 func show_screen(id: String) -> void:
 	if not SCREENS.has(id): return
+	Audio.set_music_context("menu")
 	_clear()
 	screen=load(SCREENS[id]).instantiate()
 	add_child(screen)
@@ -25,6 +26,7 @@ func show_screen(id: String) -> void:
 func start_battle(id: int) -> void:
 	if id<1 or id>Data.stages.size() or id>Save.state.unlocked_stage: return
 	selected_stage=id
+	Audio.set_music_context("battle")
 	_clear()
 	screen=load("res://scenes/battle/battle.tscn").instantiate()
 	screen.stage=Data.stages[id-1].duplicate(true)
@@ -43,7 +45,7 @@ func _build_orientation_notice() -> void:
 	var center := CenterContainer.new()
 	UIKit.fill(center)
 	orientation_notice.add_child(center)
-	var label := UIKit.label("TURN TOWARD THE DAWN\n\nRotate your device to landscape.", 30, UIKit.GOLD)
+	var label := UIKit.label(tr("TURN TOWARD THE DAWN\n\nRotate your device to landscape."), 30, UIKit.GOLD)
 	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	center.add_child(label)
 	get_viewport().size_changed.connect(_orientation_changed)

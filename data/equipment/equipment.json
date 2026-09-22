@@ -5,7 +5,8 @@
     "stats": {
       "attack": 4
     },
-    "slot": "weapon"
+    "slot": "weapon",
+    "description": "A small flame to guard the first steps."
   },
   "sunspike": {
     "id": "sunspike",
@@ -13,7 +14,8 @@
     "stats": {
       "attack": 12
     },
-    "slot": "weapon"
+    "slot": "weapon",
+    "description": "A bright point that pierces the darkness."
   },
   "iron_oath": {
     "id": "iron_oath",
@@ -22,7 +24,8 @@
       "attack": 8,
       "defense": 5
     },
-    "slot": "weapon"
+    "slot": "weapon",
+    "description": "A balanced weapon for a steadfast keeper."
   },
   "glass_staff": {
     "id": "glass_staff",
@@ -31,7 +34,8 @@
       "attack": 14,
       "mana_recovery": 1
     },
-    "slot": "weapon"
+    "slot": "weapon",
+    "description": "A prism that gathers strength and mana."
   },
   "daybreak": {
     "id": "daybreak",
@@ -40,7 +44,8 @@
       "attack": 22,
       "attack_speed": 0.2
     },
-    "slot": "weapon"
+    "slot": "weapon",
+    "description": "A swift blade lit by the coming dawn."
   },
   "trail_ring": {
     "id": "trail_ring",
@@ -48,7 +53,8 @@
     "stats": {
       "aura_range": 20
     },
-    "slot": "ring"
+    "slot": "ring",
+    "description": "Its light reaches companions farther away."
   },
   "spring_loop": {
     "id": "spring_loop",
@@ -56,7 +62,8 @@
     "stats": {
       "hp": 80
     },
-    "slot": "ring"
+    "slot": "ring",
+    "description": "A quiet spring of lasting vitality."
   },
   "river_knot": {
     "id": "river_knot",
@@ -64,7 +71,8 @@
     "stats": {
       "mana_recovery": 1.5
     },
-    "slot": "ring"
+    "slot": "ring",
+    "description": "Mana flows like a winding river."
   },
   "harvest_band": {
     "id": "harvest_band",
@@ -72,7 +80,8 @@
     "stats": {
       "supply_recovery": 1.5
     },
-    "slot": "ring"
+    "slot": "ring",
+    "description": "Keeps the company supplied for the march."
   },
   "halo": {
     "id": "halo",
@@ -81,6 +90,7 @@
       "aura_range": 50,
       "defense": 4
     },
-    "slot": "ring"
+    "slot": "ring",
+    "description": "A wide protective light around the keeper."
   }
 }

@@ -20,6 +20,7 @@ func launch(source, target, power: float) -> bool:
 			slot.power = power
 			slot.ttl = 3.0
 			slot.color = Color("f1cc86") if source.team == 0 else Color("de9baf")
+			Audio.play("ranged")
 			return true
 	return false
 

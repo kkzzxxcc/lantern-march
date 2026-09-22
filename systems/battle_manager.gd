@@ -205,7 +205,7 @@ func cast_skill(index: int) -> bool:
 				if not unit.is_base:
 					unit.heal(float(skill.power))
 			effect(hero.position, Color("91d7cd"), float(skill.radius))
-	Audio.play("skill")
+	Audio.play("heal" if skill.type == "heal" else "skill")
 	return true
 
 func area_attack(x: float, radius: float, power: float, team: int) -> void:
@@ -217,7 +217,7 @@ func effect(at: Vector2, color: Color, radius: float) -> void:
 	projectiles.effect(at, color, radius)
 
 func announce(message: String) -> void:
-	announcement.emit(message)
+	announcement.emit(tr(message))
 
 func _on_death(unit) -> void:
 	registry.unregister(unit)

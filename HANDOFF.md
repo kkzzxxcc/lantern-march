@@ -1,3 +1,7 @@
+# Current continuation — Korean default and original audio
+
+2026-09-22: Korean/English Godot PO catalogs, bundled OFL Hangul font, all game display strings plus Web shell localized; original menu/battle BGM and eight SFX connected to existing volume/mute settings and production events. Internal IDs, save v1, combat rules and rollback preserved. Local Web release `5c1f6b23b9fdfbdc`; presentation 154 checks, existing gameplay/save 231 assertions, Web/PWA 7 tests and local HTTP 16/16 passed. Evidence: review_artifacts/ko_audio_2026-09-22.md. Source push targets origin/master. **Not redeployed**: public Pages remains `0d67ff167e3ab7dd`. Mobile audible/browser QA is unverified; no native work. Next: deploy the new release, then Korean mobile/audio and persistence checks.
+
 # Current continuation — public HTTPS live
 
 2026-09-21: Public HTTPS deployment completed for release `0d67ff167e3ab7dd`: https://kkzzxxcc.github.io/lantern-march/ . Pages `gh-pages` root, HTTPS enforced, build `built`; deployment commit `4625ddc`. Public HTTP/checksum verification passed 19/19 with required MIME types; evidence: review_artifacts/web_https_2026-09-21.json. No browser execution or native work. NEXT: browser refresh/restart persistence and PWA/device QA.

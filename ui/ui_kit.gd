@@ -22,6 +22,7 @@ static func style(color: Color, border: Color = Color.TRANSPARENT, radius: int =
 static func theme() -> Theme:
 	var result := Theme.new()
 	result.default_font_size = 18
+	result.default_font = preload("res://assets/fonts/NotoSansKR.ttf")
 	result.set_color("font_color", "Label", TEXT)
 	result.set_color("font_color", "Button", TEXT)
 	result.set_color("font_hover_color", "Button", Color.WHITE)
@@ -39,14 +40,14 @@ static func theme() -> Theme:
 
 static func label(text: String, size: int = 18, color: Color = TEXT) -> Label:
 	var node := Label.new()
-	node.text = text
+	node.text = TranslationServer.translate(text)
 	node.add_theme_font_size_override("font_size", size)
 	node.add_theme_color_override("font_color", color)
 	return node
 
 static func button(text: String, callback: Callable, minimum: Vector2 = Vector2(160, 54)) -> Button:
 	var node := Button.new()
-	node.text = text
+	node.text = TranslationServer.translate(text)
 	node.custom_minimum_size = minimum
 	node.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	var guarded := func():

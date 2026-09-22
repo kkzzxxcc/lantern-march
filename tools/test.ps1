@@ -10,6 +10,8 @@ try {
     New-Item -ItemType Directory -Force -Path $env:APPDATA, (Join-Path $projectRoot 'artifacts') | Out-Null
     & $Godot --headless --path $projectRoot --editor --import --quit --log-file (Join-Path $projectRoot 'artifacts\import.log')
     if ($LASTEXITCODE -ne 0) { throw 'Godot import failed.' }
+    & $Godot --headless --path $projectRoot --script res://tests/presentation_test.gd --log-file (Join-Path $projectRoot 'artifacts\presentation-tests.log')
+    if ($LASTEXITCODE -ne 0) { throw 'Korean/audio presentation tests failed.' }
     & $Godot --headless --path $projectRoot --script res://tests/test_runner.gd --log-file (Join-Path $projectRoot 'artifacts\tests.log')
     if ($LASTEXITCODE -ne 0) { throw 'Gameplay tests failed.' }
     & $Godot --headless --path $projectRoot --script res://tests/save_probe.gd --log-file (Join-Path $projectRoot 'artifacts\save-write.log') -- write
@@ -24,7 +26,7 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Runtime cross-process persistence failed.' }
     & $Godot --headless --path $projectRoot --fixed-fps 60 --script res://tests/runtime_e2e.gd --log-file (Join-Path $projectRoot 'artifacts\boss-runtime.log') -- boss
     if ($LASTEXITCODE -ne 0) { throw 'Boss runtime failed.' }
-    $logPaths = @('boss-runtime.log','import.log','tests.log','save-write.log','save-read.log','audit-tests.log','runtime-e2e.log','runtime-e2e-reload.log') | ForEach-Object { Join-Path $projectRoot ('artifacts\' + $_) }
+    $logPaths = @('presentation-tests.log','boss-runtime.log','import.log','tests.log','save-write.log','save-read.log','audit-tests.log','runtime-e2e.log','runtime-e2e-reload.log') | ForEach-Object { Join-Path $projectRoot ('artifacts\' + $_) }
     $errorLines = Select-String -Path $logPaths -Pattern 'SCRIPT ERROR|ERROR:|WARNING:' | Where-Object { $_.Line -notmatch 'Failed to read the root certificate store' }
     if ($errorLines) { $errorLines | ForEach-Object { Write-Output $_ }; throw 'Unexpected Godot error/warning in logs.' }
     Write-Output 'All checks passed. See artifacts/test-results.json. A sandbox certificate-store warning, if present, is explicitly excluded.'

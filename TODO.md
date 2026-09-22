@@ -1,5 +1,8 @@
 # NOW
 
+- 2026-09-22: Requested Korean-default localization and original audio implemented; local Web release `5c1f6b23b9fdfbdc`. Korean/English PO catalogs, Hangul font, two scene BGM and eight SFX, volume/mute integration. Presentation 154 checks; existing gameplay/save 231 assertions; PWA 7/7; local Web HTTP 16/16 passed. See review_artifacts/ko_audio_2026-09-22.md. New build is **not publicly deployed**; Pages still serves `0d67ff167e3ab7dd`. No browser listening/device QA.
+
+
 - 2026-09-21: Public HTTPS deployment completed for release `0d67ff167e3ab7dd`: https://kkzzxxcc.github.io/lantern-march/ . Pages `gh-pages` root, HTTPS enforced, build `built`; deployment commit `4625ddc`. Public HTTP/checksum verification passed 19/19 with required MIME types; evidence: review_artifacts/web_https_2026-09-21.json. No browser execution or native work. NEXT: browser refresh/restart persistence and PWA/device QA.
 
 - 2026-09-18: Public HTTPS deployment preparation completed for release 0d67ff167e3ab7dd. GitHub Pages upload ZIP verified against prior fingerprints (16/16), archive/extracted payload checked (19/19). Local ZIP only; no deployment or browser execution. See WEB_DEPLOYMENT.md and review_artifacts/web_https_preparation_2026-09-18.md. Next executable work under current browser restriction is HTTPS deployment; refresh/restart persistence remains unverified.
@@ -11,6 +14,8 @@
 - No known blocking Web gameplay bug remains in the tested scope. Investigate any new report with a reproduction before adding content.
 
 # NEXT
+
+- Deploy local Korean/audio release `5c1f6b23b9fdfbdc` to existing Pages when directed, preserving prior hashed assets; verify mobile Korean text and BGM/SFX/volume/mute after first interaction. HTTP/headless checks do not certify audible playback.
 
 - Complete refresh/reopen verification on current release 0d67ff167e3ab7dd after reward, training, equipment and settings changes. Historical c7fa17a690861329 observations stopped before final reload and do not verify this new build.
 
@@ -26,7 +31,7 @@
 
 # OPTIONAL
 
-- Art and sound upgrades, additional content, localization.
+- Further art/sound polish and additional content. Korean/English localization catalogs and initial original BGM/SFX delivered 2026-09-22; saved language selector remains optional.
 - Cloud save only with explicit scope/credentials; preserve local migration.
 
 

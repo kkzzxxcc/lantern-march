@@ -2,8 +2,8 @@
 config_version=5
 
 [application]
-config/name="Lantern March"
-config/description="Carry the light. Hold the line. An original single-player lane adventure."
+config/name="등불의 전선"
+config/description="빛을 들고 전선을 지키는 싱글 플레이 모험."
 run/main_scene="res://scenes/boot/boot.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://assets/icon.svg"
@@ -105,3 +105,8 @@ debug_toggle={
 "events": [Object(InputEventKey,"physical_keycode":4194334)]
 }
 
+
+[internationalization]
+locale/translations=PackedStringArray("res://localization/ko.po", "res://localization/en.po")
+locale/fallback="ko"
+locale/test="ko"

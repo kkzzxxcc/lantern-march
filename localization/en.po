@@ -1,0 +1,526 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "LANTERN MARCH"
+msgstr "LANTERN MARCH"
+
+msgid "LANTERN\nMARCH"
+msgstr "LANTERN\nMARCH"
+
+msgid "AN ORIGINAL LANE ADVENTURE"
+msgstr "AN ORIGINAL LANE ADVENTURE"
+
+msgid "SINGLE PLAYER  /  CHAPTER I"
+msgstr "SINGLE PLAYER  /  CHAPTER I"
+
+msgid "Carry the light. Hold the line."
+msgstr "Carry the light. Hold the line."
+
+msgid "Beyond the last warm window, the road is fading.\nGather your companions. Bring the dawn with you."
+msgstr "Beyond the last warm window, the road is fading.\nGather your companions. Bring the dawn with you."
+
+msgid "YOUR JOURNEY"
+msgstr "YOUR JOURNEY"
+
+msgid "Begin the march    >"
+msgstr "Begin the march    >"
+
+msgid "Train companions"
+msgstr "Train companions"
+
+msgid "Keeper equipment"
+msgstr "Keeper equipment"
+
+msgid "Settings"
+msgstr "Settings"
+
+msgid "Stage %d of 10  /  Keeper Lv.%d\n%d gold in the camp chest"
+msgstr "Stage %d of 10  /  Keeper Lv.%d\n%d gold in the camp chest"
+
+msgid "Move with A / D or the touch arrows. Summon with 1–6. Cast with J / K / L."
+msgstr "Move with A / D or the touch arrows. Summon with 1–6. Cast with J / K / L."
+
+msgid "Browser storage is unavailable. Progress may not survive closing this page."
+msgstr "Browser storage is unavailable. Progress may not survive closing this page."
+
+msgid "‹  Camp"
+msgstr "‹  Camp"
+
+msgid "Camp"
+msgstr "Camp"
+
+msgid "KEEPER LV.%d     /     %d GOLD"
+msgstr "KEEPER LV.%d     /     %d GOLD"
+
+msgid "THE ROAD AHEAD"
+msgstr "THE ROAD AHEAD"
+
+msgid "A STRONGER COMPANY"
+msgstr "A STRONGER COMPANY"
+
+msgid "THE KEEPER'S KIT"
+msgstr "THE KEEPER'S KIT"
+
+msgid "MAKE YOURSELF AT HOME"
+msgstr "MAKE YOURSELF AT HOME"
+
+msgid "Ten roads toward the dawn. First victories unlock equipment and the next crossing."
+msgstr "Ten roads toward the dawn. First victories unlock equipment and the next crossing."
+
+msgid "CLEARED"
+msgstr "CLEARED"
+
+msgid "GUARDIAN"
+msgstr "GUARDIAN"
+
+msgid "ASSAULT"
+msgstr "ASSAULT"
+
+msgid "LOCKED"
+msgstr "LOCKED"
+
+msgid "%02d   %s\n\n%s\n\n%d GOLD   /   %d EXP"
+msgstr "%02d   %s\n\n%s\n\n%d GOLD   /   %d EXP"
+
+msgid "Each level adds 20 health and 5 attack. Training stays with you between journeys."
+msgstr "Each level adds 20 health and 5 attack. Training stays with you between journeys."
+
+msgid "%s   /   Lv.%d"
+msgstr "%s   /   Lv.%d"
+
+msgid "HP %d   /   ATK %d   /   DEF %d"
+msgstr "HP %d   /   ATK %d   /   DEF %d"
+
+msgid "Train  •  %d gold"
+msgstr "Train  •  %d gold"
+
+msgid "Empty"
+msgstr "Empty"
+
+msgid "Select a slot, then equip an owned item. Find the remaining pieces through first victories."
+msgstr "Select a slot, then equip an owned item. Find the remaining pieces through first victories."
+
+msgid "Equip"
+msgstr "Equip"
+
+msgid "Not yet discovered"
+msgstr "Not yet discovered"
+
+msgid "Mute all audio"
+msgstr "Mute all audio"
+
+msgid "Controls\nA / Left arrow  •  D / Right arrow  —  Move\n1–6  —  Summon a companion\nJ  —  Sunbolt    K  —  Lantern Flare    L  —  First Light\nEscape  —  Pause"
+msgstr "Controls\nA / Left arrow  •  D / Right arrow  —  Move\n1–6  —  Summon a companion\nJ  —  Sunbolt    K  —  Lantern Flare    L  —  First Light\nEscape  —  Pause"
+
+msgid "Progress is saved on this device. Browser storage must be allowed.\nYour keeper gains permanent levels from stage EXP. Battle blessings last for one stage."
+msgstr "Progress is saved on this device. Browser storage must be allowed.\nYour keeper gains permanent levels from stage EXP. Battle blessings last for one stage."
+
+msgid "KEEPER"
+msgstr "KEEPER"
+
+msgid "SUPPLY"
+msgstr "SUPPLY"
+
+msgid "MANA"
+msgstr "MANA"
+
+msgid "Keep your companions inside the lantern aura."
+msgstr "Keep your companions inside the lantern aura."
+
+msgid "A / D  MOVE     •     1–6  SUMMON     •     J / K / L  SKILLS     •     ESC  PAUSE"
+msgstr "A / D  MOVE     •     1–6  SUMMON     •     J / K / L  SKILLS     •     ESC  PAUSE"
+
+msgid "%s    •    Gate %d    •    Battle Lv.%d    •    %02d:%02d"
+msgstr "%s    •    Gate %d    •    Battle Lv.%d    •    %02d:%02d"
+
+msgid "%d  %s\n%s\n%d supply"
+msgstr "%d  %s\n%s\n%d supply"
+
+msgid "%s  %s\n%s\n%d mana"
+msgstr "%s  %s\n%s\n%d mana"
+
+msgid "%.1fs"
+msgstr "%.1fs"
+
+msgid "THE LIGHT CAN WAIT"
+msgstr "THE LIGHT CAN WAIT"
+
+msgid "Journey paused"
+msgstr "Journey paused"
+
+msgid "Continue"
+msgstr "Continue"
+
+msgid "Restart stage"
+msgstr "Restart stage"
+
+msgid "Return to the map"
+msgstr "Return to the map"
+
+msgid "A BRIGHTER FLAME"
+msgstr "A BRIGHTER FLAME"
+
+msgid "Battle level %d  •  Choose one blessing"
+msgstr "Battle level %d  •  Choose one blessing"
+
+msgid "THE ROAD IS OPEN"
+msgstr "THE ROAD IS OPEN"
+
+msgid "THE LIGHT FADES"
+msgstr "THE LIGHT FADES"
+
+msgid "Reward not saved. Please retry before leaving."
+msgstr "Reward not saved. Please retry before leaving."
+
+msgid "Retry saving reward"
+msgstr "Retry saving reward"
+
+msgid "+%d gold   /   +%d keeper EXP"
+msgstr "+%d gold   /   +%d keeper EXP"
+
+msgid "Found: "
+msgstr "Found: "
+
+msgid "Continue journey"
+msgstr "Continue journey"
+
+msgid "Guard the keeper. Build a shield line.\nLet your aura turn a close fight."
+msgstr "Guard the keeper. Build a shield line.\nLet your aura turn a close fight."
+
+msgid "Return to camp"
+msgstr "Return to camp"
+
+msgid "TURN TOWARD THE DAWN\n\nRotate your device to landscape."
+msgstr "TURN TOWARD THE DAWN\n\nRotate your device to landscape."
+
+msgid "Defeat the guardian"
+msgstr "Defeat the guardian"
+
+msgid "Break the hollow gate"
+msgstr "Break the hollow gate"
+
+msgid "No enemy in Sunbolt range"
+msgstr "No enemy in Sunbolt range"
+
+msgid "Recovered backup after invalid save."
+msgstr "Recovered backup after invalid save."
+
+msgid "Save could not be read. Using a new journey."
+msgstr "Save could not be read. Using a new journey."
+
+msgid "This save needs a newer game. Saving is disabled."
+msgstr "This save needs a newer game. Saving is disabled."
+
+msgid "Cannot write save file."
+msgstr "Cannot write save file."
+
+msgid "Save write failed."
+msgstr "Save write failed."
+
+msgid "Cannot create save backup."
+msgstr "Cannot create save backup."
+
+msgid "Cannot replace save file."
+msgstr "Cannot replace save file."
+
+msgid "Keeper Sol"
+msgstr "Keeper Sol"
+
+msgid "Steady Hands"
+msgstr "Steady Hands"
+
+msgid "All friendly attack +10%"
+msgstr "All friendly attack +10%"
+
+msgid "A Wider Light"
+msgstr "A Wider Light"
+
+msgid "Aura radius +15%"
+msgstr "Aura radius +15%"
+
+msgid "Full Packs"
+msgstr "Full Packs"
+
+msgid "Supply recovery +10%"
+msgstr "Supply recovery +10%"
+
+msgid "Living Flame"
+msgstr "Living Flame"
+
+msgid "Mana recovery +15%"
+msgstr "Mana recovery +15%"
+
+msgid "The Quiet Verge"
+msgstr "The Quiet Verge"
+
+msgid "Reed Crossing"
+msgstr "Reed Crossing"
+
+msgid "Copper Orchard"
+msgstr "Copper Orchard"
+
+msgid "A Road of Embers"
+msgstr "A Road of Embers"
+
+msgid "Heart of the Kiln"
+msgstr "Heart of the Kiln"
+
+msgid "The Pale Causeway"
+msgstr "The Pale Causeway"
+
+msgid "Bells in the Mist"
+msgstr "Bells in the Mist"
+
+msgid "The Broken Watch"
+msgstr "The Broken Watch"
+
+msgid "The Last Lantern"
+msgstr "The Last Lantern"
+
+msgid "Crown of the Hollow"
+msgstr "Crown of the Hollow"
+
+msgid "Cinder Guard"
+msgstr "Cinder Guard"
+
+msgid "A steady blade for the first line."
+msgstr "A steady blade for the first line."
+
+msgid "Moss Bastion"
+msgstr "Moss Bastion"
+
+msgid "Heavy armor. Holds the front."
+msgstr "Heavy armor. Holds the front."
+
+msgid "Reed Ranger"
+msgstr "Reed Ranger"
+
+msgid "A longbow behind the shield line."
+msgstr "A longbow behind the shield line."
+
+msgid "Prism Weaver"
+msgstr "Prism Weaver"
+
+msgid "Shatters clustered enemies."
+msgstr "Shatters clustered enemies."
+
+msgid "Dawn Mender"
+msgstr "Dawn Mender"
+
+msgid "Restores wounded companions."
+msgstr "Restores wounded companions."
+
+msgid "Ember Engine"
+msgstr "Ember Engine"
+
+msgid "Slow artillery. Double damage to gates."
+msgstr "Slow artillery. Double damage to gates."
+
+msgid "Sunbolt"
+msgstr "Sunbolt"
+
+msgid "Strike the nearest enemy ahead."
+msgstr "Strike the nearest enemy ahead."
+
+msgid "Lantern Flare"
+msgstr "Lantern Flare"
+
+msgid "Burn enemies in front of you."
+msgstr "Burn enemies in front of you."
+
+msgid "First Light"
+msgstr "First Light"
+
+msgid "Heal yourself and nearby allies."
+msgstr "Heal yourself and nearby allies."
+
+msgid "Wickblade"
+msgstr "Wickblade"
+
+msgid "Sunspike"
+msgstr "Sunspike"
+
+msgid "Iron Oath"
+msgstr "Iron Oath"
+
+msgid "Glass Staff"
+msgstr "Glass Staff"
+
+msgid "Daybreak"
+msgstr "Daybreak"
+
+msgid "Trail Ring"
+msgstr "Trail Ring"
+
+msgid "Spring Loop"
+msgstr "Spring Loop"
+
+msgid "River Knot"
+msgstr "River Knot"
+
+msgid "Harvest Band"
+msgstr "Harvest Band"
+
+msgid "Keeper Halo"
+msgstr "Keeper Halo"
+
+msgid "Ash Husk"
+msgstr "Ash Husk"
+
+msgid "Glass Skitter"
+msgstr "Glass Skitter"
+
+msgid "Iron Husk"
+msgstr "Iron Husk"
+
+msgid "Cinder Slinger"
+msgstr "Cinder Slinger"
+
+msgid "Hollow Wisp"
+msgstr "Hollow Wisp"
+
+msgid "Fracture Bell"
+msgstr "Fracture Bell"
+
+msgid "Rust Cantor"
+msgstr "Rust Cantor"
+
+msgid "Night Warden"
+msgstr "Night Warden"
+
+msgid "The Walking Kiln"
+msgstr "The Walking Kiln"
+
+msgid "The Hollow Crown"
+msgstr "The Hollow Crown"
+
+msgid "Lantern Gate"
+msgstr "Lantern Gate"
+
+msgid "WEAPON"
+msgstr "WEAPON"
+
+msgid "RING A"
+msgstr "RING A"
+
+msgid "RING B"
+msgstr "RING B"
+
+msgid "MASTER"
+msgstr "MASTER"
+
+msgid "MUSIC"
+msgstr "MUSIC"
+
+msgid "SFX"
+msgstr "SFX"
+
+msgid "MELEE"
+msgstr "MELEE"
+
+msgid "TANK"
+msgstr "TANK"
+
+msgid "RANGED"
+msgstr "RANGED"
+
+msgid "AOE"
+msgstr "AOE"
+
+msgid "HEALER"
+msgstr "HEALER"
+
+msgid "SIEGE"
+msgstr "SIEGE"
+
+msgid "PROJECTILE"
+msgstr "PROJECTILE"
+
+msgid "AREA"
+msgstr "AREA"
+
+msgid "HEAL"
+msgstr "HEAL"
+
+msgid "attack"
+msgstr "attack"
+
+msgid "defense"
+msgstr "defense"
+
+msgid "hp"
+msgstr "hp"
+
+msgid "attack speed"
+msgstr "attack speed"
+
+msgid "mana recovery"
+msgstr "mana recovery"
+
+msgid "supply recovery"
+msgstr "supply recovery"
+
+msgid "aura range"
+msgstr "aura range"
+
+msgid "FPS %d  /  entities %d  /  %.0fx\nSupply %s  Mana %s  Invincible %s"
+msgstr "FPS %d  /  entities %d  /  %.0fx\nSupply %s  Mana %s  Invincible %s"
+
+msgid "gold"
+msgstr "gold"
+
+msgid "supply"
+msgstr "supply"
+
+msgid "mana"
+msgstr "mana"
+
+msgid "invincible"
+msgstr "invincible"
+
+msgid "kill"
+msgstr "kill"
+
+msgid "clear"
+msgstr "clear"
+
+msgid "speed"
+msgstr "speed"
+
+msgid "On"
+msgstr "On"
+
+msgid "Off"
+msgstr "Off"
+
+msgid "A small flame to guard the first steps."
+msgstr "A small flame to guard the first steps."
+
+msgid "A bright point that pierces the darkness."
+msgstr "A bright point that pierces the darkness."
+
+msgid "A balanced weapon for a steadfast keeper."
+msgstr "A balanced weapon for a steadfast keeper."
+
+msgid "A prism that gathers strength and mana."
+msgstr "A prism that gathers strength and mana."
+
+msgid "A swift blade lit by the coming dawn."
+msgstr "A swift blade lit by the coming dawn."
+
+msgid "Its light reaches companions farther away."
+msgstr "Its light reaches companions farther away."
+
+msgid "A quiet spring of lasting vitality."
+msgstr "A quiet spring of lasting vitality."
+
+msgid "Mana flows like a winding river."
+msgstr "Mana flows like a winding river."
+
+msgid "Keeps the company supplied for the march."
+msgstr "Keeps the company supplied for the march."
+
+msgid "A wide protective light around the keeper."
+msgstr "A wide protective light around the keeper."

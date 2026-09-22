@@ -4,7 +4,7 @@ import path from 'node:path';
 const root=path.resolve('build/web');
 // Include presentation and worker policy, not just executable/data. A metadata-only
 // release must install a new cache too. Bump this when generated worker policy changes.
-const digest=crypto.createHash('sha256').update('lantern-march-web-v2\0');
+const digest=crypto.createHash('sha256').update('lantern-march-web-v3-ko\0');
 const originals=fs.readdirSync(root).filter(f=>f.startsWith('index.')&&!['index.html','index.service.worker.js','index.manifest.json'].includes(f)).sort();
 const inputs=['index.html','index.manifest.json',...originals].sort();
 for(const required of ['index.js','index.wasm','index.pck']) {
@@ -14,6 +14,26 @@ for(const required of ['index.js','index.wasm','index.pck']) {
 let html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'index.manifest.json'),'utf8'));
 if(!Array.isArray(manifest.icons)) throw Error('Web manifest icons must be an array');
+// Korean default also covers the engine shell outside the Godot scene tree.
+html=html.replace('<html lang="en">','<html lang="ko">')
+ .replace('Your browser does not support the canvas tag.','이 브라우저는 게임 화면을 지원하지 않습니다.')
+ .replace('Your browser does not support JavaScript.','게임을 실행하려면 자바스크립트를 허용해 주세요.')
+ .replace('setStatusNotice(err.message);', "setStatusNotice('게임을 불러오지 못했습니다. 인터넷 연결과 브라우저 지원 여부를 확인한 뒤 다시 시도해 주세요.');")
+ .replace('setStatusNotice(err);', "setStatusNotice('게임 실행에 필요한 브라우저 기능 또는 파일이 없습니다. 최신 브라우저에서 다시 시도해 주세요.');")
+ .replace('An unknown error occurred.','알 수 없는 오류가 발생했습니다.');
+fs.writeFileSync(path.join(root,'index.html'),html);
+const offlinePath=path.join(root,'index.offline.html');
+if(fs.existsSync(offlinePath)) {
+ let offline=fs.readFileSync(offlinePath,'utf8');
+ for(const [en,ko] of Object.entries({
+  '<html lang="en">':'<html lang="ko">',
+  'You are offline':'인터넷에 연결되어 있지 않습니다',
+  'This application requires an Internet connection to run for the first time.':'처음 실행할 때는 인터넷 연결이 필요합니다.',
+  'Press the button below to try reloading:':'연결 후 아래 버튼을 눌러 다시 시도해 주세요.',
+  '>Reload<':'>다시 불러오기<'
+ })) offline=offline.replaceAll(en,ko);
+ fs.writeFileSync(offlinePath,offline);
+}
 for(const f of inputs) {
  const bytes=fs.readFileSync(path.join(root,f));
  digest.update(f+'\0'+bytes.length+'\0').update(bytes);
@@ -24,7 +44,7 @@ html=html.replaceAll('index.',prefix+'.').replace('"executable":"index"','"execu
 html=html.replace('</head>','<meta name="theme-color" content="#0d252e">\n</head>');
 html=html.replace('</body>',`<script>if('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('service-worker.js').catch(console.warn));</script></body>`);
 fs.writeFileSync(path.join(root,'index.html'),html);
-Object.assign(manifest,{id:'./',scope:'./',start_url:'./index.html',short_name:'Lantern March',theme_color:'#0d252e',background_color:'#0d252e'});
+Object.assign(manifest,{id:'./',scope:'./',start_url:'./index.html',name:'등불의 전선',short_name:'등불의 전선',lang:'ko',theme_color:'#0d252e',background_color:'#0d252e'});
 for(const icon of manifest.icons)icon.src=icon.src.replace(/^index/,prefix);
 fs.writeFileSync(path.join(root,'manifest.webmanifest'),JSON.stringify(manifest,null,2));
 for(const f of ['index.service.worker.js','index.manifest.json']) fs.unlinkSync(path.join(root,f));

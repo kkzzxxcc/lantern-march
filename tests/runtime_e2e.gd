@@ -26,6 +26,7 @@ func record(condition: bool, name: String, detail: Variant = "") -> void:
 	if not condition: failures+=1
 
 func run() -> void:
+	TranslationServer.set_locale("en") # Explicit legacy selector locale; Korean is tested separately.
 	save=root.get_node("Save")
 	save.save_path="user://runtime-e2e.json"
 	var args:=OS.get_cmdline_user_args()

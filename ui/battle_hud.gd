@@ -31,8 +31,8 @@ func _ready() -> void:
 	layout.add_child(top)
 	var identity := VBoxContainer.new()
 	top.add_child(identity)
-	identity.add_child(UIKit.label("LANTERN MARCH",16,UIKit.GOLD))
-	identity.add_child(UIKit.label("%02d  /  %s" % [battle.stage.id,battle.stage.name],22))
+	identity.add_child(UIKit.label(tr("LANTERN MARCH"),16,UIKit.GOLD))
+	identity.add_child(UIKit.label("%02d  /  %s" % [battle.stage.id,tr(battle.stage.name)],22))
 	top.add_child(UIKit.spacer())
 	for kind in ["KEEPER", "SUPPLY", "MANA"]:
 		var panel := UIKit.panel()
@@ -41,7 +41,7 @@ func _ready() -> void:
 		var box := VBoxContainer.new()
 		box.add_theme_constant_override("separation",1)
 		panel.add_child(box)
-		box.add_child(UIKit.label(kind,12,UIKit.MUTED))
+		box.add_child(UIKit.label(tr(kind),12,UIKit.MUTED))
 		var number := UIKit.label("",22)
 		box.add_child(number)
 		match kind:
@@ -53,12 +53,12 @@ func _ready() -> void:
 	progress = UIKit.label(StageManager.objective(battle.stage),15,UIKit.MUTED)
 	progress.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	layout.add_child(progress)
-	message = UIKit.label("Keep your companions inside the lantern aura.",18,UIKit.GOLD)
+	message = UIKit.label(tr("Keep your companions inside the lantern aura."),18,UIKit.GOLD)
 	message.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	layout.add_child(message)
 	message_time = 8.0
 	layout.add_child(UIKit.spacer())
-	var hint := UIKit.label("A / D  MOVE     •     1–6  SUMMON     •     J / K / L  SKILLS     •     ESC  PAUSE",13,UIKit.MUTED)
+	var hint := UIKit.label(tr("A / D  MOVE     •     1–6  SUMMON     •     J / K / L  SKILLS     •     ESC  PAUSE"),13,UIKit.MUTED)
 	hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	layout.add_child(hint)
 	var bottom := HBoxContainer.new()
@@ -70,14 +70,14 @@ func _ready() -> void:
 		var data: Dictionary = Data.units[battle.roster[i]]
 		var button := _action("", "summon_unit_%d" % (i+1),Vector2(86,90))
 		button.add_theme_font_size_override("font_size",14)
-		button.tooltip_text = data.name+"\n"+data.description
+		button.tooltip_text = tr(data.name)+"\n"+tr(data.description)
 		button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		bottom.add_child(button)
 		unit_buttons.append(button)
 	for i in 3:
 		var button := _action("", "skill_%d" % (i+1),Vector2(106,90))
 		button.add_theme_font_size_override("font_size",14)
-		button.tooltip_text = Data.skills[i].description
+		button.tooltip_text = tr(Data.skills[i].description)
 		button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		bottom.add_child(button)
 		skill_buttons.append(button)
@@ -107,19 +107,19 @@ func _update() -> void:
 	supply_label.text="%d / 100" % battle.resources.supply
 	mana_label.text="%d / 100" % battle.resources.mana
 	var gate_hp: float = battle.enemy_base.hp if is_instance_valid(battle.enemy_base) else 0
-	progress.text="%s    •    Gate %d    •    Battle Lv.%d    •    %02d:%02d" % [StageManager.objective(battle.stage),gate_hp,battle.battle_level,int(battle.elapsed)/60,int(battle.elapsed)%60]
+	progress.text=tr("%s    •    Gate %d    •    Battle Lv.%d    •    %02d:%02d") % [StageManager.objective(battle.stage),gate_hp,battle.battle_level,int(battle.elapsed)/60,int(battle.elapsed)%60]
 	for i in unit_buttons.size():
 		var data: Dictionary = Data.units[battle.roster[i]]
 		var cd: float = battle.cooldowns.get(data.id,0)
-		unit_buttons[i].text="%d  %s\n%s\n%d supply" % [i+1,data.name.split(" ")[-1],"%.1fs" % cd if cd>0 else data.role.to_upper(),data.supply_cost]
+		unit_buttons[i].text=tr("%d  %s\n%s\n%d supply") % [i+1,tr(data.name),tr("%.1fs") % cd if cd>0 else tr(data.role.to_upper()),data.supply_cost]
 		unit_buttons[i].disabled=battle.status!="running" or cd>0 or (battle.resources.supply<data.supply_cost and not battle.resources.infinite_supply) or battle.team_count(0)>=int(Data.rules.friendly_cap)
 	for i in 3:
 		var data: Dictionary=Data.skills[i]
 		var cd: float=battle.skill_cooldowns[i]
-		skill_buttons[i].text="%s  %s\n%s\n%d mana" % [data.key,data.name.split(" ")[-1],"%.1fs" % cd if cd>0 else data.type.to_upper(),data.mana_cost]
+		skill_buttons[i].text=tr("%s  %s\n%s\n%d mana") % [data.key,tr(data.name),tr("%.1fs") % cd if cd>0 else tr(data.type.to_upper()),data.mana_cost]
 		skill_buttons[i].disabled=battle.status!="running" or cd>0 or (battle.resources.mana<data.mana_cost and not battle.resources.infinite_mana)
 	if debug_label!=null:
-		debug_label.text="FPS %d  /  entities %d  /  %.0fx\nSupply %s  Mana %s  Invincible %s" % [Engine.get_frames_per_second(),battle.registry.entities.size(),battle.speed,battle.resources.infinite_supply,battle.resources.infinite_mana,is_instance_valid(battle.hero) and battle.hero.invincible]
+		debug_label.text=tr("FPS %d  /  entities %d  /  %.0fx\nSupply %s  Mana %s  Invincible %s") % [Engine.get_frames_per_second(),battle.registry.entities.size(),battle.speed,tr("On") if battle.resources.infinite_supply else tr("Off"),tr("On") if battle.resources.infinite_mana else tr("Off"),tr("On") if is_instance_valid(battle.hero) and battle.hero.invincible else tr("Off")]
 
 func _build_overlay() -> void:
 	overlay=Control.new()
@@ -151,36 +151,36 @@ func show_pause(paused: bool) -> void:
 		overlay.hide()
 		return
 	_clear_overlay()
-	overlay_box.add_child(UIKit.label("THE LIGHT CAN WAIT",32,UIKit.GOLD))
-	overlay_box.add_child(UIKit.label("Journey paused",18,UIKit.MUTED))
-	overlay_box.add_child(UIKit.button("Continue",func(): battle.status="running"; overlay.hide()))
-	overlay_box.add_child(UIKit.button("Restart stage",func(): _router().start_battle(battle.stage.id)))
-	overlay_box.add_child(UIKit.button("Return to the map",func(): _router().show_screen("stage_select")))
+	overlay_box.add_child(UIKit.label(tr("THE LIGHT CAN WAIT"),32,UIKit.GOLD))
+	overlay_box.add_child(UIKit.label(tr("Journey paused"),18,UIKit.MUTED))
+	overlay_box.add_child(UIKit.button(tr("Continue"),func(): battle.status="running"; overlay.hide()))
+	overlay_box.add_child(UIKit.button(tr("Restart stage"),func(): _router().start_battle(battle.stage.id)))
+	overlay_box.add_child(UIKit.button(tr("Return to the map"),func(): _router().show_screen("stage_select")))
 
 func _offer_upgrade(choices: Array) -> void:
 	_clear_overlay()
-	overlay_box.add_child(UIKit.label("A BRIGHTER FLAME",32,UIKit.GOLD))
-	overlay_box.add_child(UIKit.label("Battle level %d  •  Choose one blessing" % battle.battle_level,18,UIKit.MUTED))
+	overlay_box.add_child(UIKit.label(tr("A BRIGHTER FLAME"),32,UIKit.GOLD))
+	overlay_box.add_child(UIKit.label(tr("Battle level %d  •  Choose one blessing") % battle.battle_level,18,UIKit.MUTED))
 	for i in choices.size():
 		var option: Dictionary=choices[i]
-		overlay_box.add_child(UIKit.button(option.name+"\n"+option.description,func(): overlay.hide(); battle.choose_upgrade(i),Vector2(500,70)))
+		overlay_box.add_child(UIKit.button(tr(option.name)+"\n"+tr(option.description),func(): overlay.hide(); battle.choose_upgrade(i),Vector2(500,70)))
 
 func _on_ended(result: String, reward: Dictionary) -> void:
 	_clear_overlay()
-	overlay_box.add_child(UIKit.label("THE ROAD IS OPEN" if result=="victory" else "THE LIGHT FADES",36,UIKit.GOLD))
-	overlay_box.add_child(UIKit.label(battle.stage.name,20))
+	overlay_box.add_child(UIKit.label(tr("THE ROAD IS OPEN") if result=="victory" else tr("THE LIGHT FADES"),36,UIKit.GOLD))
+	overlay_box.add_child(UIKit.label(tr(battle.stage.name),20))
 	if result=="victory" and not reward.get("saved", true):
-		overlay_box.add_child(UIKit.label("Reward not saved. Please retry before leaving.",18,Color("e5a2a2")))
-		overlay_box.add_child(UIKit.button("Retry saving reward",func(): battle.last_reward=Save.reward_stage(battle.stage); _on_ended(result,battle.last_reward)))
+		overlay_box.add_child(UIKit.label(tr("Reward not saved. Please retry before leaving."),18,Color("e5a2a2")))
+		overlay_box.add_child(UIKit.button(tr("Retry saving reward"),func(): battle.last_reward=Save.reward_stage(battle.stage); _on_ended(result,battle.last_reward)))
 	elif result=="victory":
-		overlay_box.add_child(UIKit.label("+%d gold   /   +%d keeper EXP" % [reward.get("gold",0),reward.get("exp",0)],24))
-		if reward.get("equipment","")!="": overlay_box.add_child(UIKit.label("Found: "+Data.equipment[reward.equipment].name,18,UIKit.GOLD))
-		overlay_box.add_child(UIKit.button("Continue journey",func(): _router().show_screen("stage_select")))
-		overlay_box.add_child(UIKit.button("Train companions",func(): _router().show_screen("upgrade")))
+		overlay_box.add_child(UIKit.label(tr("+%d gold   /   +%d keeper EXP") % [reward.get("gold",0),reward.get("exp",0)],24))
+		if reward.get("equipment","")!="": overlay_box.add_child(UIKit.label(tr("Found: ")+tr(Data.equipment[reward.equipment].name),18,UIKit.GOLD))
+		overlay_box.add_child(UIKit.button(tr("Continue journey"),func(): _router().show_screen("stage_select")))
+		overlay_box.add_child(UIKit.button(tr("Train companions"),func(): _router().show_screen("upgrade")))
 	else:
-		overlay_box.add_child(UIKit.label("Guard the keeper. Build a shield line.\nLet your aura turn a close fight.",19,UIKit.MUTED))
-	overlay_box.add_child(UIKit.button("Restart stage",func(): _router().start_battle(battle.stage.id)))
-	overlay_box.add_child(UIKit.button("Return to camp",func(): _router().show_screen("main_menu")))
+		overlay_box.add_child(UIKit.label(tr("Guard the keeper. Build a shield line.\nLet your aura turn a close fight."),19,UIKit.MUTED))
+	overlay_box.add_child(UIKit.button(tr("Restart stage"),func(): _router().start_battle(battle.stage.id)))
+	overlay_box.add_child(UIKit.button(tr("Return to camp"),func(): _router().show_screen("main_menu")))
 	if Save.last_error!="": overlay_box.add_child(UIKit.label(Save.last_error,16,Color("e5a2a2")))
 
 func toggle_debug() -> void:
@@ -196,7 +196,7 @@ func toggle_debug() -> void:
 	debug_label=UIKit.label("",14,UIKit.GOLD)
 	box.add_child(debug_label)
 	for command in ["gold","supply","mana","invincible","kill","clear","speed"]:
-		box.add_child(UIKit.button(command,func(): battle.debug_command(command),Vector2(170,30)))
+		box.add_child(UIKit.button(tr(command),func(): battle.debug_command(command),Vector2(170,30)))
 
 func _router():
 	return get_tree().root.get_node("Boot")

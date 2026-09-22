@@ -34,6 +34,7 @@ func step(battle,seconds: float) -> void:
 		battle.simulate(1.0/60.0)
 
 func _run() -> void:
+	TranslationServer.set_locale("en") # Explicit legacy UI selector locale.
 	data=root.get_node("Data")
 	save=root.get_node("Save")
 	save.save_path="user://automated-test.json"

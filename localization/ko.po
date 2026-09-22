@@ -1,0 +1,526 @@
+msgid ""
+msgstr ""
+"Language: ko\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "LANTERN MARCH"
+msgstr "등불의 전선"
+
+msgid "LANTERN\nMARCH"
+msgstr "등불의\n전선"
+
+msgid "AN ORIGINAL LANE ADVENTURE"
+msgstr "등불과 함께하는 전선 모험"
+
+msgid "SINGLE PLAYER  /  CHAPTER I"
+msgstr "혼자 하는 모험  /  제1장"
+
+msgid "Carry the light. Hold the line."
+msgstr "빛을 들고, 전선을 지키세요."
+
+msgid "Beyond the last warm window, the road is fading.\nGather your companions. Bring the dawn with you."
+msgstr "마지막 온기 너머로 길이 어둠에 잠깁니다.\n동료를 모아 새벽을 되찾으세요."
+
+msgid "YOUR JOURNEY"
+msgstr "우리의 여정"
+
+msgid "Begin the march    >"
+msgstr "여정 시작    >"
+
+msgid "Train companions"
+msgstr "동료 훈련"
+
+msgid "Keeper equipment"
+msgstr "수호자 장비"
+
+msgid "Settings"
+msgstr "설정"
+
+msgid "Stage %d of 10  /  Keeper Lv.%d\n%d gold in the camp chest"
+msgstr "스테이지 %d / 10  ·  수호자 레벨 %d\n보유 금화 %d"
+
+msgid "Move with A / D or the touch arrows. Summon with 1–6. Cast with J / K / L."
+msgstr "A / D 또는 화살표 터치로 이동 · 1–6으로 소환 · J / K / L로 스킬 사용"
+
+msgid "Browser storage is unavailable. Progress may not survive closing this page."
+msgstr "브라우저 저장 공간을 사용할 수 없습니다. 페이지를 닫으면 진행 상황이 사라질 수 있습니다."
+
+msgid "‹  Camp"
+msgstr "‹  야영지"
+
+msgid "Camp"
+msgstr "야영지"
+
+msgid "KEEPER LV.%d     /     %d GOLD"
+msgstr "수호자 레벨 %d     /     금화 %d"
+
+msgid "THE ROAD AHEAD"
+msgstr "새벽으로 향하는 길"
+
+msgid "A STRONGER COMPANY"
+msgstr "더 강한 동료들"
+
+msgid "THE KEEPER'S KIT"
+msgstr "수호자의 장비"
+
+msgid "MAKE YOURSELF AT HOME"
+msgstr "환경 설정"
+
+msgid "Ten roads toward the dawn. First victories unlock equipment and the next crossing."
+msgstr "새벽으로 향하는 열 갈래 길. 첫 승리로 장비와 다음 스테이지가 열립니다."
+
+msgid "CLEARED"
+msgstr "완료"
+
+msgid "GUARDIAN"
+msgstr "보스"
+
+msgid "ASSAULT"
+msgstr "공성"
+
+msgid "LOCKED"
+msgstr "잠김"
+
+msgid "%02d   %s\n\n%s\n\n%d GOLD   /   %d EXP"
+msgstr "%02d   %s\n\n%s\n\n금화 %d   /   경험치 %d"
+
+msgid "Each level adds 20 health and 5 attack. Training stays with you between journeys."
+msgstr "레벨마다 체력 20, 공격력 5가 증가합니다. 훈련 효과는 다음 여정에도 유지됩니다."
+
+msgid "%s   /   Lv.%d"
+msgstr "%s   /   레벨 %d"
+
+msgid "HP %d   /   ATK %d   /   DEF %d"
+msgstr "체력 %d   /   공격 %d   /   방어 %d"
+
+msgid "Train  •  %d gold"
+msgstr "훈련  ·  금화 %d"
+
+msgid "Empty"
+msgstr "비어 있음"
+
+msgid "Select a slot, then equip an owned item. Find the remaining pieces through first victories."
+msgstr "장착 부위를 선택한 뒤 보유 장비를 고르세요. 첫 승리로 새 장비를 얻을 수 있습니다."
+
+msgid "Equip"
+msgstr "장착"
+
+msgid "Not yet discovered"
+msgstr "미발견"
+
+msgid "Mute all audio"
+msgstr "모든 소리 끄기"
+
+msgid "Controls\nA / Left arrow  •  D / Right arrow  —  Move\n1–6  —  Summon a companion\nJ  —  Sunbolt    K  —  Lantern Flare    L  —  First Light\nEscape  —  Pause"
+msgstr "조작 안내\nA / 왼쪽 화살표 · D / 오른쪽 화살표 — 이동\n1–6 — 동료 소환\nJ — 태양탄   K — 등불 폭발   L — 새벽빛\nEsc — 일시정지"
+
+msgid "Progress is saved on this device. Browser storage must be allowed.\nYour keeper gains permanent levels from stage EXP. Battle blessings last for one stage."
+msgstr "진행 상황은 이 기기에 저장됩니다. 브라우저 저장 공간을 허용해 주세요.\n스테이지 경험치로 수호자가 성장합니다. 전투 축복은 해당 스테이지에서만 유지됩니다."
+
+msgid "KEEPER"
+msgstr "수호자"
+
+msgid "SUPPLY"
+msgstr "보급"
+
+msgid "MANA"
+msgstr "마나"
+
+msgid "Keep your companions inside the lantern aura."
+msgstr "동료를 등불 오라 안에 두세요."
+
+msgid "A / D  MOVE     •     1–6  SUMMON     •     J / K / L  SKILLS     •     ESC  PAUSE"
+msgstr "A / D 이동   ·   1–6 소환   ·   J / K / L 스킬   ·   Esc 일시정지"
+
+msgid "%s    •    Gate %d    •    Battle Lv.%d    •    %02d:%02d"
+msgstr "%s   ·   적 성문 %d   ·   전투 레벨 %d   ·   %02d:%02d"
+
+msgid "%d  %s\n%s\n%d supply"
+msgstr "%d  %s\n%s\n보급 %d"
+
+msgid "%s  %s\n%s\n%d mana"
+msgstr "%s  %s\n%s\n마나 %d"
+
+msgid "%.1fs"
+msgstr "%.1f초"
+
+msgid "THE LIGHT CAN WAIT"
+msgstr "잠시 쉬어 가세요"
+
+msgid "Journey paused"
+msgstr "일시정지"
+
+msgid "Continue"
+msgstr "계속하기"
+
+msgid "Restart stage"
+msgstr "다시 도전"
+
+msgid "Return to the map"
+msgstr "지도 보기"
+
+msgid "A BRIGHTER FLAME"
+msgstr "더 밝은 불꽃"
+
+msgid "Battle level %d  •  Choose one blessing"
+msgstr "전투 레벨 %d  ·  축복을 하나 고르세요"
+
+msgid "THE ROAD IS OPEN"
+msgstr "승리 · 길이 열렸습니다"
+
+msgid "THE LIGHT FADES"
+msgstr "패배 · 빛이 사그라듭니다"
+
+msgid "Reward not saved. Please retry before leaving."
+msgstr "보상이 저장되지 않았습니다. 나가기 전에 다시 저장해 주세요."
+
+msgid "Retry saving reward"
+msgstr "보상 저장 재시도"
+
+msgid "+%d gold   /   +%d keeper EXP"
+msgstr "금화 +%d   /   수호자 경험치 +%d"
+
+msgid "Found: "
+msgstr "획득: "
+
+msgid "Continue journey"
+msgstr "여정 계속하기"
+
+msgid "Guard the keeper. Build a shield line.\nLet your aura turn a close fight."
+msgstr "수호자를 지키고 방어선을 세우세요.\n오라의 힘으로 위기를 넘기세요."
+
+msgid "Return to camp"
+msgstr "야영지로"
+
+msgid "TURN TOWARD THE DAWN\n\nRotate your device to landscape."
+msgstr "새벽을 향해 돌아서세요\n\n기기를 가로로 돌려 주세요."
+
+msgid "Defeat the guardian"
+msgstr "보스를 처치하세요"
+
+msgid "Break the hollow gate"
+msgstr "적 성문을 파괴하세요"
+
+msgid "No enemy in Sunbolt range"
+msgstr "태양탄 사거리 안에 적이 없습니다"
+
+msgid "Recovered backup after invalid save."
+msgstr "저장 파일 오류로 백업을 복구했습니다."
+
+msgid "Save could not be read. Using a new journey."
+msgstr "저장 파일을 읽지 못해 새 여정을 시작합니다."
+
+msgid "This save needs a newer game. Saving is disabled."
+msgstr "더 최신 게임에서 만든 저장입니다. 저장 기능을 사용할 수 없습니다."
+
+msgid "Cannot write save file."
+msgstr "저장 파일을 작성할 수 없습니다."
+
+msgid "Save write failed."
+msgstr "저장에 실패했습니다."
+
+msgid "Cannot create save backup."
+msgstr "저장 백업을 만들 수 없습니다."
+
+msgid "Cannot replace save file."
+msgstr "저장 파일을 교체할 수 없습니다."
+
+msgid "Keeper Sol"
+msgstr "수호자 솔"
+
+msgid "Steady Hands"
+msgstr "흔들림 없는 손"
+
+msgid "All friendly attack +10%"
+msgstr "모든 아군 공격력 +10%"
+
+msgid "A Wider Light"
+msgstr "넓게 퍼지는 빛"
+
+msgid "Aura radius +15%"
+msgstr "오라 반경 +15%"
+
+msgid "Full Packs"
+msgstr "가득 찬 배낭"
+
+msgid "Supply recovery +10%"
+msgstr "보급 회복량 +10%"
+
+msgid "Living Flame"
+msgstr "살아 있는 불꽃"
+
+msgid "Mana recovery +15%"
+msgstr "마나 회복량 +15%"
+
+msgid "The Quiet Verge"
+msgstr "고요한 변두리"
+
+msgid "Reed Crossing"
+msgstr "갈대 나루"
+
+msgid "Copper Orchard"
+msgstr "구릿빛 과수원"
+
+msgid "A Road of Embers"
+msgstr "잿불의 길"
+
+msgid "Heart of the Kiln"
+msgstr "가마의 심장"
+
+msgid "The Pale Causeway"
+msgstr "창백한 둑길"
+
+msgid "Bells in the Mist"
+msgstr "안개 속 종소리"
+
+msgid "The Broken Watch"
+msgstr "무너진 망루"
+
+msgid "The Last Lantern"
+msgstr "마지막 등불"
+
+msgid "Crown of the Hollow"
+msgstr "공허의 왕관"
+
+msgid "Cinder Guard"
+msgstr "잿불 수호병"
+
+msgid "A steady blade for the first line."
+msgstr "최전선을 지키는 믿음직한 검."
+
+msgid "Moss Bastion"
+msgstr "이끼 방패병"
+
+msgid "Heavy armor. Holds the front."
+msgstr "두꺼운 갑옷으로 전선을 버팁니다."
+
+msgid "Reed Ranger"
+msgstr "갈대 궁수"
+
+msgid "A longbow behind the shield line."
+msgstr "방패 뒤에서 장궁으로 공격합니다."
+
+msgid "Prism Weaver"
+msgstr "수정 술사"
+
+msgid "Shatters clustered enemies."
+msgstr "뭉친 적들을 산산이 부숩니다."
+
+msgid "Dawn Mender"
+msgstr "새벽 치유사"
+
+msgid "Restores wounded companions."
+msgstr "다친 동료의 체력을 회복합니다."
+
+msgid "Ember Engine"
+msgstr "잿불 포대"
+
+msgid "Slow artillery. Double damage to gates."
+msgstr "느린 포격. 성문에 두 배의 피해를 줍니다."
+
+msgid "Sunbolt"
+msgstr "태양탄"
+
+msgid "Strike the nearest enemy ahead."
+msgstr "전방에서 가장 가까운 적을 공격합니다."
+
+msgid "Lantern Flare"
+msgstr "등불 폭발"
+
+msgid "Burn enemies in front of you."
+msgstr "전방의 적들을 불태웁니다."
+
+msgid "First Light"
+msgstr "새벽빛"
+
+msgid "Heal yourself and nearby allies."
+msgstr "자신과 주변 아군을 치유합니다."
+
+msgid "Wickblade"
+msgstr "심지 검"
+
+msgid "Sunspike"
+msgstr "태양 창"
+
+msgid "Iron Oath"
+msgstr "강철의 맹세"
+
+msgid "Glass Staff"
+msgstr "유리 지팡이"
+
+msgid "Daybreak"
+msgstr "동틀녘"
+
+msgid "Trail Ring"
+msgstr "길잡이 반지"
+
+msgid "Spring Loop"
+msgstr "샘물 반지"
+
+msgid "River Knot"
+msgstr "강물 매듭"
+
+msgid "Harvest Band"
+msgstr "수확의 가락지"
+
+msgid "Keeper Halo"
+msgstr "수호자의 후광"
+
+msgid "Ash Husk"
+msgstr "재의 망자"
+
+msgid "Glass Skitter"
+msgstr "유리 질주자"
+
+msgid "Iron Husk"
+msgstr "강철 망자"
+
+msgid "Cinder Slinger"
+msgstr "잿불 투척병"
+
+msgid "Hollow Wisp"
+msgstr "공허의 도깨비불"
+
+msgid "Fracture Bell"
+msgstr "균열의 종"
+
+msgid "Rust Cantor"
+msgstr "녹슨 성가대원"
+
+msgid "Night Warden"
+msgstr "밤의 감시자"
+
+msgid "The Walking Kiln"
+msgstr "걸어 다니는 가마"
+
+msgid "The Hollow Crown"
+msgstr "공허의 군주"
+
+msgid "Lantern Gate"
+msgstr "등불 성문"
+
+msgid "WEAPON"
+msgstr "무기"
+
+msgid "RING A"
+msgstr "반지 1"
+
+msgid "RING B"
+msgstr "반지 2"
+
+msgid "MASTER"
+msgstr "전체 음량"
+
+msgid "MUSIC"
+msgstr "배경 음악"
+
+msgid "SFX"
+msgstr "효과음"
+
+msgid "MELEE"
+msgstr "근접"
+
+msgid "TANK"
+msgstr "방어"
+
+msgid "RANGED"
+msgstr "원거리"
+
+msgid "AOE"
+msgstr "범위"
+
+msgid "HEALER"
+msgstr "치유"
+
+msgid "SIEGE"
+msgstr "공성"
+
+msgid "PROJECTILE"
+msgstr "원거리"
+
+msgid "AREA"
+msgstr "범위"
+
+msgid "HEAL"
+msgstr "회복"
+
+msgid "attack"
+msgstr "공격력"
+
+msgid "defense"
+msgstr "방어력"
+
+msgid "hp"
+msgstr "체력"
+
+msgid "attack speed"
+msgstr "공격 속도"
+
+msgid "mana recovery"
+msgstr "마나 회복"
+
+msgid "supply recovery"
+msgstr "보급 회복"
+
+msgid "aura range"
+msgstr "오라 범위"
+
+msgid "FPS %d  /  entities %d  /  %.0fx\nSupply %s  Mana %s  Invincible %s"
+msgstr "초당 프레임 %d / 개체 %d / %.0f배\n무한 보급 %s · 무한 마나 %s · 무적 %s"
+
+msgid "gold"
+msgstr "금화 추가"
+
+msgid "supply"
+msgstr "무한 보급"
+
+msgid "mana"
+msgstr "무한 마나"
+
+msgid "invincible"
+msgstr "무적"
+
+msgid "kill"
+msgstr "영웅 쓰러뜨리기"
+
+msgid "clear"
+msgstr "즉시 승리"
+
+msgid "speed"
+msgstr "진행 속도"
+
+msgid "On"
+msgstr "켜짐"
+
+msgid "Off"
+msgstr "꺼짐"
+
+msgid "A small flame to guard the first steps."
+msgstr "첫걸음을 지켜 주는 작은 불꽃."
+
+msgid "A bright point that pierces the darkness."
+msgstr "어둠을 꿰뚫는 빛나는 창끝."
+
+msgid "A balanced weapon for a steadfast keeper."
+msgstr "굳건한 수호자를 위한 공방 일체의 무기."
+
+msgid "A prism that gathers strength and mana."
+msgstr "공격과 마나 회복을 돕는 수정 지팡이."
+
+msgid "A swift blade lit by the coming dawn."
+msgstr "다가오는 새벽을 머금은 날렵한 검."
+
+msgid "Its light reaches companions farther away."
+msgstr "더 먼 동료에게까지 오라를 전합니다."
+
+msgid "A quiet spring of lasting vitality."
+msgstr "생명력을 북돋는 고요한 샘의 힘."
+
+msgid "Mana flows like a winding river."
+msgstr "굽이치는 강처럼 마나를 회복합니다."
+
+msgid "Keeps the company supplied for the march."
+msgstr "행군하는 동료의 보급을 돕습니다."
+
+msgid "A wide protective light around the keeper."
+msgstr "수호자 주위로 넓고 든든한 빛을 펼칩니다."
